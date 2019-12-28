@@ -1,0 +1,1 @@
+font: utm good's word regular (http://cuuam.gosu.vn/cau-lac-bo)
