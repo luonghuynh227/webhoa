@@ -11,4 +11,5 @@
   --> $('.archive').on('click', '.latest-post-content .item', function() {
 			$(this).find("a.view").click();
 		});
-		
+
+https://viblo.asia/p/tim-hieu-ve-eventpreventdefault-eventstoppropagation-va-eventstopimmediatepropagation-4P85637OKY3
