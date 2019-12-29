@@ -11,3 +11,4 @@
   --> $('.archive').on('click', '.latest-post-content .item', function() {
 			$(this).find("a.view").click();
 		});
+		
