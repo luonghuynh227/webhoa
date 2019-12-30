@@ -13,3 +13,10 @@
 		});
 
 https://viblo.asia/p/tim-hieu-ve-eventpreventdefault-eventstoppropagation-va-eventstopimmediatepropagation-4P85637OKY3
+
+
+1. Trang chủ
+2. Trang mua bán (shop)
+3. Trang blog  (https://www.bopflorist.com/blog/)
+4. Trang Blog detail (https://www.bopflorist.com/2018/04/25/bop-daily/)
+5. Trang list ảnh  (https://www.bopflorist.com/wedding-portfolio/)
