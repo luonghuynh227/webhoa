@@ -1,0 +1,163 @@
+
+$icon_path: '../fonts/icons/fonts';
+$icon_prefix: 'dns4l7';
+
+@font-face {
+  font-family: 'Icons';
+  src:  url('#{$icon_path}/Icons.eot?#{$icon_prefix}');
+  src:  url('#{$icon_path}/Icons.eot?#{$icon_prefix}#iefix') format('embedded-opentype'),
+    url('#{$icon_path}/Icons.ttf?#{$icon_prefix}') format('truetype'),
+    url('#{$icon_path}/Icons.woff?#{$icon_prefix}') format('woff'),
+    url('#{$icon_path}/Icons.svg?#{$icon_prefix}#Icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 16px;
+  line-height: 1;
+  display: inline-block;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-button:before {
+  content: "\e900";
+}
+.icon-arrow-down:before {
+  content: "\e901";
+}
+.icon-arrow-left:before {
+  content: "\e902";
+}
+.icon-arrow-right:before {
+  content: "\e903";
+}
+.icon-arrow-up:before {
+  content: "\e904";
+}
+.icon-baby-cot:before {
+  content: "\e905";
+}
+.icon-bath-mat:before {
+  content: "\e906";
+}
+.icon-bath-towel:before {
+  content: "\e907";
+}
+.icon-bathrobe:before {
+  content: "\e908";
+}
+.icon-bathroom:before {
+  content: "\e909";
+}
+.icon-bedding:before {
+  content: "\e90a";
+}
+.icon-comb:before {
+  content: "\e90b";
+}
+.icon-conditioner:before {
+  content: "\e90c";
+}
+.icon-dot-circle:before {
+  content: "\e90d";
+}
+.icon-extra-bed:before {
+  content: "\e90e";
+}
+.icon-face-towel:before {
+  content: "\e90f";
+}
+.icon-facebook:before {
+  content: "\e910";
+}
+.icon-floor:before {
+  content: "\e911";
+}
+.icon-hair-dryer:before {
+  content: "\e912";
+}
+.icon-instagram:before {
+  content: "\e913";
+}
+.icon-iron:before {
+  content: "\e914";
+}
+.icon-laundry-bag:before {
+  content: "\e915";
+}
+.icon-minibar:before {
+  content: "\e916";
+}
+.icon-non-smoking-room:before {
+  content: "\e917";
+}
+.icon-pdf:before {
+  content: "\e918";
+}
+.icon-phone:before {
+  content: "\e919";
+}
+.icon-plane:before {
+  content: "\e91a";
+}
+.icon-private-sitting-area:before {
+  content: "\e91b";
+}
+.icon-razor-set:before {
+  content: "\e91c";
+}
+.icon-room-area:before {
+  content: "\e91d";
+}
+.icon-safe-box:before {
+  content: "\e91e";
+}
+.icon-sanitary-bag:before {
+  content: "\e91f";
+}
+.icon-shampoo:before {
+  content: "\e920";
+}
+.icon-shopping-bag:before {
+  content: "\e921";
+}
+.icon-shower-and-bathtub:before {
+  content: "\e922";
+}
+.icon-shower-cap:before {
+  content: "\e923";
+}
+.icon-tea-and-coffee:before {
+  content: "\e924";
+}
+.icon-toothbrush:before {
+  content: "\e925";
+}
+.icon-tv:before {
+  content: "\e926";
+}
+.icon-umbrella:before {
+  content: "\e927";
+}
+.icon-wifi:before {
+  content: "\e928";
+}
+.icon-youtube:before {
+  content: "\e929";
+}
+
+
+
+
+

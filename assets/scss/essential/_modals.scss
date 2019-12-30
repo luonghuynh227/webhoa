@@ -1,0 +1,401 @@
+//
+// Modals
+// --------------------------------------------------
+
+// .modal-open      - body class for killing the scroll
+// .modal           - container to scroll within
+// .modal-dialog    - positioning shell for the actual modal
+// .modal-content   - actual modal w/ bg and corners and shit
+
+// Kill the scroll on the body
+.modal-open {
+  overflow: hidden;
+}
+
+// Container that the modal scrolls within
+.modal {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $zindex-modal;
+  -webkit-overflow-scrolling: touch;
+
+  // Prevent Chrome on Windows from adding a focus outline. For details, see
+  // https://github.com/twbs/bootstrap/pull/10951.
+  outline: 0;
+
+  // When fading in the modal, animate it to slide down
+  &.fade .modal-dialog {
+    @include translate(0, 50%);
+    @include transition-transform(0.3s ease-out);
+    @include device_min(medium) {
+      @include translate(0, -75%);
+    }
+    
+  }
+  &.in .modal-dialog { 
+    @include translate(0, 0%);
+    @include device_min(medium) {
+      @include translate(0, -50%); 
+    }
+  }
+
+  .close{
+    border: 0;
+    display: block;
+    width: 100%;
+    padding: 0;
+    background-color: transparent;
+  }
+  .close-icon{
+    position: absolute;
+    content: "";
+    border: 0;
+    padding: 0;
+    width: 26px;
+    height: 26px;
+    z-index: 1;
+    top: 15px;
+    right: 15px;
+    background-color: transparent;
+    @include device_min(small){
+      top: 25px;
+      right: 25px;
+    }
+    &:before,
+    &:after{
+      position: absolute;
+      content: "";
+      top: 9px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $gray;
+    }
+    &:before{
+      transform: rotate(45deg);
+    }
+    &:after{
+      transform: rotate(-45deg);
+    }
+  }
+}
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+// Shell div to position the modal with bottom padding
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+
+// Actual modal
+.modal-content {
+  position: relative;
+  background-color: $modal-content-bg;
+  background-clip: padding-box;
+  // Remove focus outline from opened modal
+  outline: 0;
+  @include device_min(medium){
+    display: table;
+  }
+}
+
+.modal-header,
+.modal-body{
+  @include device_min(medium){
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+// Modal background
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $zindex-modal-background;
+  background-color: $modal-backdrop-bg;
+  // Fade for backdrop
+  &.fade { @include opacity(0); }
+  &.in { @include opacity($modal-backdrop-opacity); }
+}
+
+// Modal header
+// Top section of the modal w/ title and dismiss
+.modal-header {
+  //padding: $modal-title-padding;
+  // border-bottom: 1px solid $modal-header-border-color;
+  @include clearfix;
+  padding: 0;
+  position: relative;
+
+  .cover-image{
+    @include cover_image;
+    height: 200px;
+  }
+
+  @include device_min(medium){
+    width: 41.237113402%;
+    .cover-image{
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+
+.modal-description{
+  margin-bottom: 0;
+}
+
+// Close icon
+// .modal-header .close {
+//   margin-top: -2px;
+// }
+
+// Title text within header
+.modal-title {
+  //margin: 0;
+  //line-height: $modal-title-line-height;
+  margin-top: 47px;
+  margin-bottom: 3px;
+  @include device_max(small){
+    font-size: 26px;
+    &:before,
+    &:after{
+      display: none!important;
+    }
+  }
+}
+
+// Modal body
+// Where all modal content resides (sibling of .modal-header and .modal-footer)
+.modal-body {
+  position: relative;
+  //padding: $modal-inner-padding;
+  padding: 15px 15px 85px;
+  @include device_min(medium){
+    width: 58.762886598%;
+    padding: 30px 60px 125px;
+  }
+}
+
+// Footer (for actions)
+// .modal-footer {
+//   padding: $modal-inner-padding;
+//   text-align: right; // right align buttons
+//   border-top: 1px solid $modal-footer-border-color;
+//   @include clearfix; // clear it in case folks use .pull-* classes on buttons
+
+// Properly space out buttons
+//   .btn + .btn {
+//     margin-left: 5px;
+//     margin-bottom: 0; // account for input[type="submit"] which gets the bottom margin like all other inputs
+//   }
+// but override that for button groups
+//   .btn-group .btn + .btn {
+//     margin-left: -1px;
+//   }
+// and override it for block buttons as well
+//   .btn-block + .btn-block {
+//     margin-left: 0;
+//   }
+// }
+
+// Measure scrollbar width for padding body during modal show/hide
+// .modal-scrollbar-measure {
+//   position: absolute;
+//   top: -9999px;
+//   width: 50px;
+//   height: 50px;
+//   overflow: scroll;
+// }
+
+// Scale up the modal
+@media (min-width: $screen-sm-min) {
+  // Automatically set modal's width for larger viewports
+  .modal-dialog {
+    // width: $modal-md;
+    // margin: 30px auto;
+  }
+  .modal-content {
+    // @include box-shadow(0 5px 15px rgba(0,0,0,.5));
+  }
+
+  // Modal sizes
+  .modal-sm { width: $modal-sm; }
+}
+
+@media (min-width: $screen-md-min) {
+  //.modal-lg { width: $modal-lg; }
+  .modal-dialog {
+    width: $modal-lg;
+    margin: 0 auto;
+  }
+}
+
+
+// MODAL STYLE
+.modal.popup-1{
+  form{
+    margin-top: 33px;
+    .form-group{
+      margin-bottom: 10px;
+    }
+    [type="submit"]{
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .close{
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    right: 0;
+  }
+} 
+
+.modal.popup-2{
+  .modal-dialog{
+    @include device_min(large) {
+      width: 1227px;
+    }
+  }
+  .modal-content{
+    display: block;
+    font-size: 0;
+  }
+  .modal-header,
+  .modal-body{
+    display: inline-block;
+    width: 50%;
+    font-size: 16px;
+    vertical-align: top;
+    @include device_max(medium){
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .modal-header{
+    padding: {
+      top: 70px;
+      left: 70px;
+      bottom: 70px;
+      right: 35px;
+    }
+    .cover-image{
+      position: initial;
+      width: 100%;
+      padding-top: 100%;
+    }
+    @include device_max(medium){
+      padding: 0;
+      display: none;
+      .cover-image{
+        padding-top: 0;
+        height: 400px;
+      }
+    }
+  }
+
+  .modal-body{
+    padding: {
+      top: 70px;
+      left: 35px;
+      bottom: 70px;
+      right: 70px;
+    }
+    @include device_max(medium){
+      padding: {
+        top: 70px;
+        left: 35px;
+        bottom: 70px;
+        right: 35px;
+      }
+    }
+    @include device_max(medium){
+      padding: {
+        top: 35px;
+        left: 15px;
+        bottom: 35px;
+        right: 15px;
+      }
+    }
+  }
+
+  .modal-title{
+    margin-top: -4px;
+    margin-bottom: 12px;
+  }
+
+  form{
+    margin-top: 24px;
+    textarea{
+      min-height: 126px;
+    }
+    .form-group{
+      text-align: left;
+      margin-bottom: 6px;
+    }
+    .col-left,
+    .col-right{
+      float: left;
+    }
+    .col-left{
+      width: 100%;
+      @include device_min(small){
+        width: 50%;
+        padding-right: 5px;
+      }
+    }
+    .col-right{
+      width: 100%;
+      @include device_min(small){
+        width: 50%;
+        padding-left: 5px;
+      }
+    }
+    .col-row{
+      @include device_min(small){
+        display: table;
+        margin-bottom: 6px;
+        >.form-group{
+          display: table-cell;
+          &:first-child{
+            padding-right: 5px;
+          }
+          &:last-child{
+            padding-left: 5px;
+          }
+        }
+      }
+    }
+
+    [type="submit"]{
+      margin-top: 40px;
+    }
+  }
+}
+
+
+@include device_min(medium) {
+  .modal-dialog {
+    top: 50%!important;
+  //   transform: translateY(-50%)!important;
+  }
+}

@@ -1,0 +1,25 @@
+$font_path: '../fonts/webfonts';
+//=========== WEB-FONTS =============//
+
+@font-face {
+  font-family: 'utm_gods_word';
+  src: url('#{$font_path}/umtgodswordr.eot');
+  src: url('#{$font_path}/umtgodswordr.eot?#iefix') format('embedded-opentype'),
+      url('#{$font_path}/umtgodswordr.woff') format('woff'),
+      url('#{$font_path}/umtgodswordr.ttf') format('truetype'),
+      url('#{$font_path}/umtgodswordr.svg#Muli-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'utm_gods_word_bold';
+  src: url('#{$font_path}/umtgodswordbold.eot');
+  src: url('#{$font_path}/umtgodswordbold.eot?#iefix') format('embedded-opentype'),
+      url('#{$font_path}/umtgodswordbold.woff') format('woff'),
+      url('#{$font_path}/umtgodswordbold.ttf') format('truetype'),
+      url('#{$font_path}/umtgodswordbold.svg#Muli-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+

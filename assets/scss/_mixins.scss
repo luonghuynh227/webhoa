@@ -1,0 +1,109 @@
+@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+
+@mixin list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+@mixin custom_button($color, $background, $border){
+  @include button-variant($color, $background, $border);
+  &.btn-outline{
+    background: none;
+    color: $background;
+    border-color: $border;
+  }
+  // &.btn-round{
+    // border-radius: $padding-base-vertical + ($line-height-base*$font-size-base)
+  // }
+}
+
+@mixin form-control-focus($color: $input-border-focus) {
+  $color-rgba: rgba(red($color), green($color), blue($color), .6);
+  &:focus {
+    border-color: $color;
+    outline: 0;
+  }
+}
+
+// Breakpoint min-width
+$min_breakpoints: (
+  small: 768px,
+  medium: 992px,
+  large: 1200px,
+  big_large: 1412px
+);
+
+// _mixins.scss
+@mixin device_min($min_breakpoint) { 
+  @if map-has-key($min_breakpoints, $min_breakpoint) {
+    @media (min-width: #{map-get($min_breakpoints, $min_breakpoint)}) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
+
+// Breakpoint max-width
+$max_breakpoints: (
+  small: 767px,
+  medium: 991px,
+  large: 1199px,
+  big_large: 1413px
+);
+
+// _mixins.scss
+@mixin device_max($max_breakpoint) { 
+  @if map-has-key($max_breakpoints, $max_breakpoint) {
+    @media (max-width: #{map-get($max_breakpoints, $max_breakpoint)}) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
+
+@mixin font_heading {
+  font: {
+    family: $font-serif;
+    weight: 400;
+  }
+  line-height: 1.2;
+}
+
+@mixin font_content {
+  font: {
+    family: $font-sans-serif;
+    weight: 300;
+  }
+  line-height: 1.5;
+}
+
+@mixin cover_image {
+  background: {
+    repeat: no-repeat;
+    size: cover;
+    position: center;
+    color: $line-color;
+  }
+}
+
+@mixin position_absolute {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+@mixin bg_diagonal {
+  background-color: #f4ffff;
+  background-image: url(data:image/jpeg;base64,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);
+}

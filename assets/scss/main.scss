@@ -1,0 +1,10 @@
+@import "mixins";
+@import "custom_variables";
+// @import "partials/navigation";
+@import "partials/header";
+@import "partials/footer";
+
+@import "components/reset_anything";
+@import "components/line_section";
+// HomePage
+@import "components/contact_form";

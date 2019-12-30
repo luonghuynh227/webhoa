@@ -1,0 +1,130 @@
+// CUSTOM CORLOR
+$primary-color:                     #25b1ac;
+$primary-color-hover:               #15928e;
+
+// $secondary-color:                   #0b54a2;
+// $gray-color:                        #a4a4a4;
+// $brand-success:                     #49B75D;
+
+// BG COLOR
+$bg-color:                          #e8f6f7;
+$bg-color-2:                        #101010;
+$bg-color-3:                        #15928e;
+
+// LINE COLOR
+$line-color:                        #e1e1e1;
+
+// BASE COLOR
+$gray-base:                         #000;
+$gray-darker:                       #333;
+$gray-dark:                         #4D4D4D;
+$gray:                              #373737;
+$gray-light:                        #818181;
+$gray-lighter:                      #EEE;
+
+// VIEWPORT
+$screen-sm:                         768px;
+$screen-md:                         992px;
+$screen-lg:                         1200px;
+$screen-xs-max:                     ($screen-sm - 1);
+$screen-sm-max:                     ($screen-md - 1);
+$screen-md-max:                     ($screen-lg - 1);
+
+// BASIC
+$body-bg:                           #FFF;
+$border-radius-base:                0px;
+$border-radius-large:               0px;
+$border-radius-small:               0px;
+
+// GRID
+$grid-gutter-width:                 30px;
+$container-tablet:                  (720px + $grid-gutter-width);
+$container-desktop:                 (940px + $grid-gutter-width);
+$container-large-desktop:           (1140px + $grid-gutter-width);
+
+// TEXT
+$font-family-sans-serif:            'Open Sans', sans-serif; // Font Không có chân (Content)
+$font-sans-serif:                   $font-family-sans-serif;
+$font-family-serif:                 'utm_gods_word', Georgia, "Times New Roman", Times, serif; // Font có chân (Heading)
+$font-serif:                        $font-family-serif;
+$text-color:                        $gray-light;
+
+$link-color:                        $primary-color;
+$link-hover-color:                  darken($link-color, 15%);
+$link-hover-decoration:             underline;
+
+$font-size-base:                    14px;
+$font-size-large:                   24px;
+$font-size-small:                   14px;
+$line-height-base:                  1.5; // Content
+
+// HEADING
+$font-size-h1:                      46px;
+$font-size-h2:                      40px;
+$font-size-h3:                      26px;
+$font-size-h4:                      18px;
+$font-size-h5:                      16px;
+$font-size-h6:                      14px;
+
+$headings-font-family:							$font-serif;
+$headings-font-weight:              400;
+$headings-line-height:              50px; // Heading
+$headings-color:                    $gray;
+$headings-small-color:              $gray;
+
+// COMPONENT
+//** Global color / background for active items (e.g., navs or dropdowns).
+$component-active-color:            #FFF;
+$component-active-bg:               $primary-color;
+$component-offset-horizontal:       120px;
+
+// BUTTON
+$btn-font-weight:                   300;
+$btn-default-color:                 $gray;
+$btn-default-bg:                    transparent;
+$btn-default-border:                $line-color;
+
+$btn-primary-color:                 #fff;
+$btn-primary-bg:                    $primary-color;
+$btn-primary-border:                $primary-color;
+
+$btn-border-radius-base:            0px;
+$btn-border-radius-large:           0px;
+$btn-border-radius-small:           0px;
+
+// FORM
+$input-border:                      $line-color;
+$input-border-focus:                $primary-color;
+$input-color:                       $gray;
+$input-color-placeholder:           $gray-light;
+$input-height-base:                 46px;
+$form-group-margin-bottom:          20px;
+
+// TABLE
+$table-border-color:                $gray-light;
+
+// DROPDOWN
+$dropdown-link-hover-color:         $primary-color;
+$dropdown-link-hover-bg:            #fff;
+$dropdown-border:                   $line-color;
+
+// NAVBAR
+$nav-link-padding:                  10px 17px;
+$nav-link-hover-bg:                 transparent;
+$nav-pills-border-radius:           $border-radius-base;
+$nav-pills-active-link-hover-bg:    transparent;
+$nav-pills-active-link-hover-color: $primary-color;
+
+// MODAL
+$modal-header-border-color:         #ebebeb;
+$modal-md:                          100%;
+$modal-lg:                          970px;
+$modal-backdrop-bg:                 $bg-color-2;
+$modal-backdrop-opacity:            .7;
+
+// PADDING
+$padding-base-vertical:             10px;
+$padding-base-horizontal:           20px;
+
+// BOOTSTRAP VARIABLES
+@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/variables";
