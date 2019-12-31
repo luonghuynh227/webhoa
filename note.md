@@ -6,7 +6,7 @@
 
 4. menu top opacity (.head-page) https://www.bopflorist.com/wp-content/themes/flowvin/assets/js/scripts.js
 
-5. popup (.popup-with-zoom-anim) https://www.bopflorist.com/wp-content/themes/flowvin/assets/js/jquery.magnific-popup.min.js
+5. popup (.popup-with-zoom-anim)  https://dimsemenov.com/plugins/magnific-popup/documentation.html
   --> view-source:https://www.bopflorist.com/
   --> $('.archive').on('click', '.latest-post-content .item', function() {
 			$(this).find("a.view").click();
