@@ -40,6 +40,7 @@
 		}
 		@include device_min(large) {
 			padding-left: 10px;
+	    min-height: 540px;
 		}
 		h5 {
 			font-size: 21px;

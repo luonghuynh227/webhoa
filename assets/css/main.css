@@ -95,7 +95,8 @@
 
 @media (min-width: 1200px) {
   .about-content .about-content-text {
-    padding-left: 10px; } }
+    padding-left: 10px;
+    min-height: 540px; } }
 
 .about-content .about-content-text h5 {
   font-size: 21px;
