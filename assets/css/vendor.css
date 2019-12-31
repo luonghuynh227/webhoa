@@ -377,10 +377,10 @@ textarea {
   line-height: inherit; }
 
 a {
-  color: #25b1ac;
+  color: #c7ab7c;
   text-decoration: none; }
   a:hover, a:focus {
-    color: #18726f;
+    color: #c7ab7c;
     text-decoration: underline; }
   a:focus {
     outline: 5px auto -webkit-focus-ring-color;
@@ -1307,7 +1307,7 @@ output {
   -o-transition: border-color ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s; }
   .form-control:focus {
-    border-color: #25b1ac;
+    border-color: #c7ab7c;
     outline: 0; }
   .form-control::-moz-placeholder {
     color: #818181;
@@ -1809,33 +1809,33 @@ fieldset[disabled] a.btn {
     margin-left: 9px;
     top: 5px; }
   .btn-default:active:focus, .btn-default:active, .btn-default:hover, .btn-default:focus {
-    color: #25b1ac;
-    border-color: #25b1ac; }
+    color: #c7ab7c;
+    border-color: #c7ab7c; }
 
 .btn-primary {
   color: #fff;
-  background-color: #25b1ac;
-  border-color: #25b1ac; }
+  background-color: #c7ab7c;
+  border-color: #c7ab7c; }
   .btn-primary:focus, .btn-primary.focus {
     color: #fff;
-    background-color: #1c8783;
-    border-color: #0f4846; }
+    background-color: #b89458;
+    border-color: #896c3b; }
   .btn-primary:hover {
     color: #fff;
-    background-color: #1c8783;
-    border-color: #1a7e7b; }
+    background-color: #b89458;
+    border-color: #b59051; }
   .btn-primary:active, .btn-primary.active,
   .open > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #1c8783;
-    border-color: #1a7e7b; }
+    background-color: #b89458;
+    border-color: #b59051; }
     .btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus,
     .open > .btn-primary.dropdown-toggle:hover,
     .open > .btn-primary.dropdown-toggle:focus,
     .open > .btn-primary.dropdown-toggle.focus {
       color: #fff;
-      background-color: #166966;
-      border-color: #0f4846; }
+      background-color: #a68247;
+      border-color: #896c3b; }
   .btn-primary:active, .btn-primary.active,
   .open > .btn-primary.dropdown-toggle {
     background-image: none; }
@@ -1843,15 +1843,15 @@ fieldset[disabled] a.btn {
   fieldset[disabled] .btn-primary:hover,
   fieldset[disabled] .btn-primary:focus,
   fieldset[disabled] .btn-primary.focus {
-    background-color: #25b1ac;
-    border-color: #25b1ac; }
+    background-color: #c7ab7c;
+    border-color: #c7ab7c; }
   .btn-primary .badge {
-    color: #25b1ac;
+    color: #c7ab7c;
     background-color: #fff; }
   .btn-primary.btn-outline {
     background: none;
-    color: #25b1ac;
-    border-color: #25b1ac; }
+    color: #c7ab7c;
+    border-color: #c7ab7c; }
   .btn-primary:active:focus, .btn-primary:active, .btn-primary:hover, .btn-primary:focus {
     background-color: #15928e;
     border-color: #15928e; }
@@ -1904,7 +1904,7 @@ fieldset[disabled] a.btn {
     margin-right: 11px;
     vertical-align: bottom; }
   .btn-link:active:focus, .btn-link:active, .btn-link:hover, .btn-link:focus {
-    color: #25b1ac; }
+    color: #c7ab7c; }
 
 .btn-icon {
   background-color: transparent;
@@ -1952,14 +1952,14 @@ fieldset[disabled] a.btn {
 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
   text-decoration: none;
-  color: #25b1ac;
+  color: #c7ab7c;
   background-color: #fff; }
 
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
   color: #FFF;
   text-decoration: none;
   outline: 0;
-  background-color: #25b1ac; }
+  background-color: #c7ab7c; }
 
 .dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
   color: #818181; }
@@ -2057,7 +2057,7 @@ fieldset[disabled] a.btn {
         cursor: not-allowed; }
   .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background-color: transparent;
-    border-color: #25b1ac; }
+    border-color: #c7ab7c; }
   .nav .nav-divider {
     height: 1px;
     margin: 9.5px 0;
@@ -2074,7 +2074,7 @@ fieldset[disabled] a.btn {
     .nav-pills > li > a {
       border-radius: 0px; }
     .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
-      color: #25b1ac;
+      color: #c7ab7c;
       background-color: transparent; }
 
 .tab-content > .tab-pane {

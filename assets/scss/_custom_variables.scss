@@ -1,5 +1,5 @@
 // CUSTOM CORLOR
-$primary-color:                     #25b1ac;
+$primary-color:                     #c7ab7c;
 $primary-color-hover:               #15928e;
 
 // $secondary-color:                   #0b54a2;
@@ -50,7 +50,7 @@ $font-serif:                        $font-family-serif;
 $text-color:                        $gray-light;
 
 $link-color:                        $primary-color;
-$link-hover-color:                  darken($link-color, 15%);
+$link-hover-color:                  $link-color; //darken($link-color, 15%);
 $link-hover-decoration:             underline;
 
 $font-size-base:                    14px;

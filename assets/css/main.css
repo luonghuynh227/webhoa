@@ -14,14 +14,206 @@
 .p-relative {
   position: relative; }
 
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.d-flex.flex-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.line-title {
+  width: 87px;
+  height: 7px;
+  background: url(../images/line-pattern-1.png) no-repeat;
+  margin: 20px auto 0; }
+
 .awe-background {
   background-size: cover;
   background-repeat: repeat-y; }
+
+.embed-responsive {
+  padding-bottom: 56.25%;
+  position: relative;
+  display: block;
+  overflow: hidden; }
+  .embed-responsive .embed-responsive-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0; }
 
 .line-section {
   width: 100%;
   height: 5px;
   background: #fff url(../images/line-section.png) repeat-x; }
+
+@media (max-width: 767px) {
+  .about .title h2 {
+    font-size: 30px;
+    line-height: 40px; } }
+
+@media (max-width: 767px) {
+  .about .title h2 br {
+    display: none; } }
+
+.about .line-title {
+  margin: 11px auto 20px; }
+  @media (min-width: 768px) {
+    .about .line-title {
+      margin: 44px auto 54px; } }
+
+@media (min-width: 1200px) {
+  .about-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+
+.about-content .about-video, .about-content .about-content-text {
+  width: 100%; }
+  @media (min-width: 1200px) {
+    .about-content .about-video, .about-content .about-content-text {
+      width: 50%; } }
+
+@media (min-width: 1200px) {
+  .about-content .about-video {
+    padding-right: 10px; } }
+
+@media (min-width: 768px) {
+  .about-content .about-content-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+
+@media (min-width: 1200px) {
+  .about-content .about-content-text {
+    padding-left: 10px; } }
+
+.about-content .about-content-text h5 {
+  font-size: 21px;
+  line-height: 30px;
+  padding-right: 40px; }
+
+.about-content .about-content-text .about-text-des {
+  text-align: justify;
+  font-size: 14px;
+  color: #4c4c4c; }
+
+@media (min-width: 768px) {
+  .about-content .about-content-text .text-wrap, .about-content .about-content-text .about-to-contact {
+    width: 50%; } }
+
+@media (min-width: 768px) {
+  .about-content .about-content-text .text-wrap {
+    padding-right: 20px; } }
+
+.about-to-contact {
+  position: relative;
+  padding: 0 20px;
+  background: #E3D1A2;
+  background: -webkit-gradient(linear, left bottom, left top, from(#E3D1A2), to(#fdeed1));
+  background: -o-linear-gradient(bottom, #E3D1A2 0%, #fdeed1 100%);
+  background: linear-gradient(to top, #E3D1A2 0%, #fdeed1 100%);
+  background: -moz-linear-gradient(to top, #E3D1A2 0%, #fdeed1 100%);
+  background: -o-linear-gradient(to top, #E3D1A2 0%, #fdeed1 100%);
+  background: -ms-linear-gradient(to top, #E3D1A2 0%, #fdeed1 100%);
+  background: -webkit-linear-gradient(bottom, #E3D1A2 0%, #fdeed1 100%); }
+  @media (max-width: 767px) {
+    .about-to-contact {
+      display: block;
+      width: 100%;
+      height: auto;
+      padding-top: 30px;
+      padding-bottom: 30px; } }
+  .about-to-contact a {
+    display: block;
+    position: relative;
+    width: 240px;
+    height: 240px;
+    margin: auto;
+    border: 1px solid #c7ab7b;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center; }
+    .about-to-contact a .text-italic {
+      position: absolute;
+      display: table;
+      width: 160px;
+      height: 160px;
+      border: 1px solid #c7ab7b;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      text-align: center;
+      margin: auto;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+      .about-to-contact a .text-italic h6 {
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 20px;
+        line-height: 1.2em;
+        color: #b29563;
+        padding: 20px; }
+  .about-to-contact .text-ci {
+    width: 220px;
+    height: 220px !important;
+    font-size: 16px;
+    color: #c7ab7b;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 10px; }
+  .about-to-contact .text-ci-2 {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg); }
+  .about-to-contact .line {
+    position: absolute;
+    width: 60%;
+    height: 1px;
+    background-color: #c7ab7b;
+    margin: auto;
+    left: 0;
+    right: 0; }
+    .about-to-contact .line:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background-color: #c7ab7b;
+      margin: auto;
+      left: 0;
+      right: 0;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg); }
+  .about-to-contact .line-1 {
+    top: 25%; }
+    .about-to-contact .line-1:after {
+      top: -2px; }
+  .about-to-contact .line-2 {
+    bottom: 25%; }
+    .about-to-contact .line-2:after {
+      bottom: -2px; }
 
 #awe-contact {
   background-image: url(../images/contact.jpg);
