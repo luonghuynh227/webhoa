@@ -21,6 +21,12 @@
   height: 7px;
   background: url(../images/line-pattern-1.png) no-repeat;
   margin: 20px auto 0;
+  @include device_min(small) {
+		margin: 44px auto 54px;
+	}
+}
+.line-title {
+	// margin: 11px auto 20px;
 }
 
 .awe-background {
@@ -44,4 +50,16 @@
     height: 100%;
     border: 0;
 	}
+}
+
+img {
+  max-width: 100%;
+  width: auto\9;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+  display: inline-block;
+}
+.img-circle {
+  border-radius: 50%;
 }

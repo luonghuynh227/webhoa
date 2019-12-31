@@ -502,6 +502,11 @@ h5, .h5 {
 h6, .h6 {
   font-size: 14px; }
 
+@media (max-width: 767px) {
+  h2, .h2 {
+    font-size: 33px;
+    line-height: 40px; } }
+
 p {
   margin: 0 0 10.5px; }
 

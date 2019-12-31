@@ -1,21 +1,11 @@
 .about {
 	.title {
 		h2 {
-			@include device_max(small) {
-				font-size: 30px;
-				line-height: 40px;
-			}
 			br {
 				@include device_max(small) {
 					display: none;
 				}
 			}
-		}
-	}
-	.line-title {
-		margin: 11px auto 20px;
-		@include device_min(small) {
-			margin: 44px auto 54px;
 		}
 	}
 }
@@ -37,9 +27,6 @@
 	.about-content-text {
 		@include device_min(small) {
 			display: flex;
-		}
-		@include device_min(large) {
-			padding-left: 10px;
 	    min-height: 540px;
 		}
 		h5 {
@@ -58,6 +45,7 @@
 			}
 		}
 		.text-wrap {
+	    padding-left: 10px;
 			@include device_min(small) {
 				padding-right: 20px;
 			}
@@ -81,6 +69,7 @@
     height: auto;
     padding-top: 30px;
     padding-bottom: 30px;
+    margin-top: 20px;
 	}
   a {
   	display: block;

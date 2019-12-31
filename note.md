@@ -14,6 +14,7 @@
 
 https://viblo.asia/p/tim-hieu-ve-eventpreventdefault-eventstoppropagation-va-eventstopimmediatepropagation-4P85637OKY3
 
+http://gsgd.co.uk/sandbox/jquery/easing/
 
 1. Trang chủ
 2. Trang mua bán (shop)
