@@ -36,10 +36,12 @@ jQuery(document).ready(function($) {
   
   $('.list-services').owlCarousel({
     loop:true,
-    margin:10,
+    margin: 50,
     responsiveClass:true,
     nav:true,
     dots: false,
+    smartSpeed:800,
+    // autoplay: true,
     responsive:{
       0:{
         items:1
