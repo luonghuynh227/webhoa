@@ -63,11 +63,11 @@ jQuery(document).ready(function($) {
 
     // custom slider img
     
-    $('.list-banner-slider').append('<ul class="owl-num"><li class="index-item"></li><li class="total-item"></li></ul>');
+    $('.banner-slider').append('<ul class="owl-num"><li class="index-item"></li><li class="total-item"></li></ul>');
     
-    $('.list-banner-slider').owlCarousel({
+    var banner_slider;
+    banner_slider = $('.list-banner-slider').owlCarousel({
       items: 1,
-      loop:true,
       mouseDrag: false,
       nav:true,
       dots: false,
@@ -76,18 +76,18 @@ jQuery(document).ready(function($) {
       autoplay:true,
       smartSpeed:1000,
       addClassActive:true,
-      afterMove: function() {
-          getCurrentIndex();
-      }
     });
+    banner_slider.on('changed.owl.carousel', function(e) {
+      getCurrentIndex();
+    })
 
     getCurrentIndex();
 
     function getCurrentIndex() {
-      var totalItem = $('.banner-slider .owl-item').length;
+      var totalItem = $('.list-banner-slider .owl-item').length;
       if(totalItem > 0) {
           var indexItem;
-          $('.banner-slider .owl-item').each(function(index) {
+          $('.list-banner-slider .owl-item').each(function(index) {
               if($(this).hasClass("active"))
               indexItem = index + 1;
           });
