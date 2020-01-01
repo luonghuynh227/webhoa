@@ -44,7 +44,7 @@
 
 @media (min-width: 768px) {
   .line-title {
-    margin: 44px auto 54px;
+    margin: 20px auto 54px;
   }
 }
 
@@ -114,8 +114,23 @@ img {
   float: left;
   width: 50px;
   height: 50px;
-  background: #fff url("../images/nav-slide-1.png") no-repeat left center;
+  background: url("../images/nav-slide-1.png") no-repeat left center !important;
   font-size: 0;
+  border-radius: 0 !important;
+  margin: 0 1px !important;
+}
+
+.banner-slider .owl-nav button:hover {
+  background-color: #5f4c2e !important;
+  background-image: url(../images/nav-slide-3.png) !important;
+}
+
+.banner-slider .owl-nav button.owl-next {
+  background-position: right center !important;
+}
+
+.banner-slider .owl-nav button span {
+  display: none;
 }
 
 .item-banner-slider {
@@ -183,7 +198,7 @@ img {
   height: 212px;
   background: url(../images/bopflorist_logo2.gif) no-repeat;
   display: inline-block;
-  margin-top: -122px;
+  margin-top: -130px;
   position: relative;
   z-index: 9;
 }
@@ -286,6 +301,7 @@ img {
 
 .item-flower .caption .big {
   font-size: 22px;
+  margin-bottom: 0;
 }
 
 @media (max-width: 767px) {
