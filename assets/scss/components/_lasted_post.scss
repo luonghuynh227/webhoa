@@ -93,12 +93,18 @@
     	@include device_max(small) {
 				font-size: 20px;
 			}
+      @include device_max(ismall) {
+        font-size: 16px;
+      }
     }
     .lasted-price {
     	font-size: 20px;
     	@include device_max(small) {
 				font-size: 18px;
 			}
+      @include device_max(ismall) {
+        font-size: 15px;
+      }
     }
 	}
 	
