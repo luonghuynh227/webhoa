@@ -195,8 +195,24 @@ img {
   font-size: 22px;
 }
 
+@media (max-width: 767px) {
+  .item-flower .caption .big {
+    font-size: 20px;
+  }
+}
+
 .item-flower .caption .lasted-price {
   font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  .item-flower .caption .lasted-price {
+    font-size: 18px;
+  }
+}
+
+.services .aw-section {
+  margin-top: 50px;
 }
 
 @media (min-width: 1200px) {

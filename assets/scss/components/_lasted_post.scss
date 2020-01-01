@@ -90,9 +90,15 @@
     color: #4c4c4c;
     .big {
     	font-size: 22px;
+    	@include device_max(small) {
+				font-size: 20px;
+			}
     }
     .lasted-price {
     	font-size: 20px;
+    	@include device_max(small) {
+				font-size: 18px;
+			}
     }
 	}
 	
