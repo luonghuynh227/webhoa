@@ -2,7 +2,7 @@
 
 2. Js cho slider (.banner-slider) và nhiều thứ khác http://bopflorist.com/wp-content/themes/flowvin/assets/js/scripts.js
 
-3. owl carousel full https://codepen.io/tutsplus/pen/oPeLJR
+3. owl carousel full http://www.landmarkmlp.com/js-plugin/owl.carousel/demos/transitions.html
 
 4. menu top opacity (.head-page) https://www.bopflorist.com/wp-content/themes/flowvin/assets/js/scripts.js
 

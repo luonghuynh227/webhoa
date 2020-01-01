@@ -53,7 +53,79 @@ jQuery(document).ready(function($) {
         items:3
       }
     }
-})
+  });
+  /*==============================
+            list-banner-slider
+    ==============================*/
+    
+    $('.list-banner-slider').owlCarousel({
+      items: 1,
+      loop:true,
+      mouseDrag: false,
+      nav:true,
+      dots: false,
+      animateOut: 'owl-fadeUp-out',
+      animateIn: 'owl-fadeUp-in',
+      autoplay:true,
+      smartSpeed:1000,
+      addClassActive:true,
+      afterMove: function() {
+          getCurrentIndex();
+      }
+    });
+
+    getCurrentIndex();
+
+    function getCurrentIndex() {
+      var totalItem = $('.banner-slider .owl-item').length;
+      if(totalItem > 0) {
+          var indexItem;
+          $('.banner-slider .owl-item').each(function(index) {
+              if($(this).hasClass("active"))
+              indexItem = index + 1;
+          });
+          if(indexItem < 10)
+              indexItem = "0" + indexItem;
+          if(totalItem < 10)
+              totalItem = "0" + totalItem;
+          $('.index-item').text(indexItem);
+          $('.total-item').text(totalItem);
+      }
+    }
+
+  /*==============================
+        Banner slide
+    ==============================*/
+
+  // full height screen
+  function setHeightBanner() {
+      var heightWindow = $(window).height();
+      var widthWindow = $(window).width();
+      if (widthWindow >= 480) {
+          $('#banner-slider, .list-banner-slider').height(heightWindow);
+      } else {
+          var heightFixMobile = heightWindow - 140;
+          $('#banner-slider, .list-banner-slider').height(heightFixMobile);
+      }
+      var heightBanner = $('#banner-slider').height();
+      if($('.blog-intro').length!='' && heightWindow>730) heightBanner=730;
+      if (heightWindow > heightBanner && $("#banner-slider").length>0) {
+          $('#header, #banner-slider').css({
+              height: heightBanner + 'px'
+          });
+
+      } else if (heightWindow <= heightBanner && $("#banner-slider").length>0) {
+          $('#header, #banner-slider').css({
+              height: heightWindow + 'px'
+          });
+      }
+
+
+  };
+  setHeightBanner();
+  $(window).bind('resize', function () {
+      setHeightBanner();
+  });
 
 
 
