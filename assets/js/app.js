@@ -54,9 +54,16 @@ jQuery(document).ready(function($) {
       }
     }
   });
+
+
+
   /*==============================
             list-banner-slider
     ==============================*/
+
+    // custom slider img
+    
+    $('.list-banner-slider').append('<ul class="owl-num"><li class="index-item"></li><li class="total-item"></li></ul>');
     
     $('.list-banner-slider').owlCarousel({
       items: 1,
@@ -94,7 +101,7 @@ jQuery(document).ready(function($) {
     }
 
   /*==============================
-        Banner slide
+        setHeightBanner Banner slide
     ==============================*/
 
   // full height screen
@@ -102,10 +109,10 @@ jQuery(document).ready(function($) {
       var heightWindow = $(window).height();
       var widthWindow = $(window).width();
       if (widthWindow >= 480) {
-          $('#banner-slider, .list-banner-slider').height(heightWindow);
+          $('#banner-slider, .list-banner-slider, .item-banner-slider').height(heightWindow);
       } else {
           var heightFixMobile = heightWindow - 140;
-          $('#banner-slider, .list-banner-slider').height(heightFixMobile);
+          $('#banner-slider, .list-banner-slider, .item-banner-slider').height(heightFixMobile);
       }
       var heightBanner = $('#banner-slider').height();
       if($('.blog-intro').length!='' && heightWindow>730) heightBanner=730;
