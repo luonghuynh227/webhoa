@@ -65,26 +65,27 @@ jQuery(document).ready(function($) {
     
     $('.banner-slider').append('<ul class="owl-num"><li class="index-item"></li><li class="total-item"></li></ul>');
     
-    var banner_slider;
+    var banner_slider, number = 1;
     banner_slider = $('.list-banner-slider').owlCarousel({
       items: 1,
+      loop: true,
       mouseDrag: false,
       nav:true,
       dots: false,
       animateOut: 'owl-fadeUp-out',
       animateIn: 'owl-fadeUp-in',
       autoplay:true,
-      smartSpeed:1000,
+      smartSpeed:1500,
       addClassActive:true,
     });
-    banner_slider.on('changed.owl.carousel', function(e) {
+    banner_slider.on('translate.owl.carousel', function(e) {
       getCurrentIndex();
     })
 
     getCurrentIndex();
 
     function getCurrentIndex() {
-      var totalItem = $('.list-banner-slider .owl-item').length;
+      var totalItem = $('.list-banner-slider').attr('data-total');
       if(totalItem > 0) {
           var indexItem;
           $('.list-banner-slider .owl-item').each(function(index) {
