@@ -165,11 +165,11 @@ jQuery(document).ready(function($) {
   /*==============================
       Click sub menu mobile
     ==============================*/
-  $('.menu-item-has-child .submenu-plus').click(function () {
-      $(this).toggleClass('submenu-minus');
-      // $('.head-menu-ul').toggleClass('menu-mobile-show');
-      $('.sub-menu').fadeToggle();
-  });
+  
+  $('.submenu-plus').on("click", function(){
+		$(this).parent().find('.sub-menu').slideToggle();
+		$(this).toggleClass('submenu-minus');
+	});
 
 
 });
