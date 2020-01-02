@@ -42,8 +42,10 @@
     	margin-top: 0;
     	li {
     		.link-parent {
-    			display: block;
-		    	line-height: 70px;
+		    	@include device_min(large) {
+				    display: block;
+		    		line-height: 70px;
+					}
     		}
     	}
     }
@@ -142,6 +144,10 @@
     right: 3%;
     top: 50%;
     transform: translateY(-50%);
+    transition: all .3s cubic-bezier(1,.01,.29,.93);
+    &.active-mb {
+    	right: 185px;
+    }
 		i {
 	    font-size: 22px;
   		color: #fff;
@@ -153,6 +159,11 @@
 	}
 	.head-menu-ul {
 		text-align: center;
+		&.menu-mobile-show {
+			@include device_max(large) {
+				right: 0;
+			}
+		}
 		@include device_max(large) {
 			text-align: left;
 			right: 0;
@@ -179,8 +190,8 @@
 		    color: #fff;
 		    padding: 0 14px;
 		    @include device_max(large) {
+		    	display: block;
 					text-align: left;
-			    padding: 0;
 			    font-size: 14px;
 			    line-height: 35px;
 			    color: #fff;

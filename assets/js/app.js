@@ -148,5 +148,17 @@ jQuery(document).ready(function($) {
     
 	});
 
-  
+  /*==============================
+      Click hamburger mobile
+    ==============================*/
+  $('body').append('<div class="wrap-overlay"></div>');
+  $('.button-menu-mobile').click(function () {
+      $(this).toggleClass('active-mb');
+      $('.head-menu-ul').toggleClass('menu-mobile-show');
+      $('.wrap-overlay').fadeToggle().click(function () {
+          $('.button-menu-mobile').removeClass('active-mb');
+          $('.head-menu-ul').removeClass('menu-mobile-show');
+          $(this).fadeOut(300);
+      });
+  });
 });
