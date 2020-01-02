@@ -27,7 +27,11 @@
 
 // Breakpoint min-width
 $min_breakpoints: (
-  ismall: 414px,
+  320: 320px,
+  360: 360px,
+  375: 375px,
+  414: 414px,
+  480: 480px,
   small: 768px,
   medium: 992px,
   large: 1200px,
@@ -50,7 +54,11 @@ $min_breakpoints: (
 
 // Breakpoint max-width
 $max_breakpoints: (
-  ismall: 413px,
+  320: 319px,
+  360: 359px,
+  375: 374px,
+  414: 413px,
+  480: 479px,
   small: 767px,
   medium: 991px,
   large: 1199px,

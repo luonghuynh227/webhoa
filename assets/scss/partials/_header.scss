@@ -146,7 +146,7 @@
     transform: translateY(-50%);
     transition: all .3s cubic-bezier(1,.01,.29,.93);
     &.active-mb {
-    	right: 185px;
+    	right: 170px;
     }
 		i {
 	    font-size: 22px;
@@ -210,14 +210,17 @@
 		.sub-menu {
 			top: 75px;
 	    opacity: 1;
+      visibility: visible;
 	    @include device_max(large) {
 	    	top: 0;
+	    	visibility: visible;
 			}
 		}
 	}
 	.sub-menu {
 		position: absolute;
 		opacity: 0;
+    visibility: hidden;
 		left: 0;
     top: 30px;
 		width: 400px;

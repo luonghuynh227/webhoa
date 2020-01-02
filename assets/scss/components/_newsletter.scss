@@ -1,3 +1,150 @@
 .newsletter {
-	
+	#awe-subcribe {
+		padding-top: 50px;
+		padding-bottom: 100px;
+		@include device_max(480) {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+	}
+}
+.newsletter-title {
+	h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    @include device_max(large) {
+			line-height: 40px;
+		}
+	}
+	.sub-desc {
+    color: #3c3d38;
+	}
+}
+.newsletter-form {
+	position: relative;
+  max-width: 380px;
+  margin-top: 130px;
+  margin-bottom: 30px;
+  @include device_max(large) {
+		margin-top: 35px;
+		margin-bottom: 30px;
+	}
+  input {
+    font-size: 16px;
+    font-family: 'utm_gods_word';
+    line-height: 46px;
+    height: 46px;
+    padding: 0 12px;
+    width: 100%;
+    border-bottom: 1px solid #9f9485;
+    color: #9f9485;
+    &::placeholder {
+		  color: #9f9485;
+		  font-style: italic;
+		}
+
+		&::-ms-input-placeholder { 
+		  color: #9f9485;
+		  font-style: italic;
+		}
+
+		&::-ms-input-placeholder {
+		  color: #9f9485;
+		  font-style: italic;
+		}
+  }
+  .subcribe-btn {
+  	border-left: 1px solid #9f9485;
+    position: absolute;
+    width: 60px;
+    height: 46px;
+    text-align: center;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    i {
+    	font-size: 28px;
+    	color: #61625c;
+    }
+  }
+  .subcribe-status {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.7em;
+    margin: 10px auto 0;
+    max-width: 612px;
+    padding: 0 15px;
+  }
+}
+
+.social-content {
+	margin-top: 112px;
+	@include device_max(large) {
+		margin-top: 60px;
+    text-align: center;
+	}
+	.link-social-content {
+		position: relative;
+		.follow-text, .contact-text {
+			font-size: 8px;
+		}
+		.contact-text {
+			position: absolute;
+			bottom: -8px;
+	    left: 50%;
+	    transform: translateX(-50%) rotate(180deg);
+		}
+	}
+	.social-icon {
+		position: relative;
+    display: inline-block;
+    width: 93px;
+    height: 90px;
+    padding: 2px 0 0;
+    margin: 10px 10px;
+    background-repeat: no-repeat;
+    background-image: url(../images/line-social.png);
+    background-size: 93px auto;
+    border-radius: 50%;
+    @include device_max(414) {
+			margin: 2px;
+		}
+		@include device_max(360) {
+			margin: 0;
+		}
+    i {
+    	position: absolute;
+	    display: block;
+	    text-align: center;
+	    border: 1px solid #c7ab7b;
+	    color: #c7ab7b;
+	    margin: auto;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    border-radius: 50%;
+	    width: 60px;
+	    height: 60px;
+	    line-height: 60px;
+	    font-size: 28px;
+	    &.icon-facebook {
+	    	&:hover {
+	    		color: #3b5998;
+	    	}
+	    }
+	    &.icon-instagram {
+	    	&:hover {
+  		    color: #ac2cb1;
+	    	}
+	    }
+	    &.icon-yelp {
+	    	&:hover {
+  		    color: #d32323;
+	    	}
+	    }
+    }
+	}
 }

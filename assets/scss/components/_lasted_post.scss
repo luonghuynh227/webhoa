@@ -94,8 +94,11 @@
     	@include device_max(small) {
 				font-size: 20px;
 			}
-      @include device_max(ismall) {
+      @include device_max(414) {
         font-size: 16px;
+      }
+      @include device_max(360) {
+        font-size: 14px;
       }
     }
     .lasted-price {
@@ -103,7 +106,7 @@
     	@include device_max(small) {
 				font-size: 18px;
 			}
-      @include device_max(ismall) {
+      @include device_max(414) {
         font-size: 15px;
       }
     }

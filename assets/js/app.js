@@ -8,6 +8,16 @@ jQuery(document).ready(function($) {
   const contact_up = new CircleType(document.getElementById('contact-up')).radius(110);
 	const contact_sub = new CircleType(document.getElementById('contact-sub')).radius(110);
 
+	// social
+	const follow1 = new CircleType(document.getElementById('follow1')).radius(46);
+	const contact1 = new CircleType(document.getElementById('contact1')).radius(42);
+
+	const follow2 = new CircleType(document.getElementById('follow2')).radius(46);
+	const contact2 = new CircleType(document.getElementById('contact2')).radius(42);
+
+	const follow3 = new CircleType(document.getElementById('follow3')).radius(46);
+	const contact13= new CircleType(document.getElementById('contact3')).radius(42);
+
 
   /*==============================
           Scroll contact
@@ -128,8 +138,6 @@ jQuery(document).ready(function($) {
   $(window).bind('resize', function () {
       setHeightBanner();
   });
-
-
 
   /*==============================
       scroll opacity head-page
