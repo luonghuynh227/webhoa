@@ -9,6 +9,12 @@
   right: 0;
   z-index: 999;
   background-color: #5f4c2e;
+  @include device_max(large) {
+		opacity: .8 !important;
+		top: 0;
+    height: 70px;
+    padding: 0;
+	}
   &.header-sticky {
     position: fixed;
     top: 0;
@@ -41,9 +47,14 @@
   .head-top {
 
 	}
-	.logo-pc {
+	.logo-pc, .logo-mobile {
 		img {
 			width: 180px;
+		}
+	}
+	.logo-mobile {
+		img {
+			width: 90px;
 		}
 	}
 	.logo-scroll {
@@ -68,6 +79,9 @@
 	a {
 		color: #fff;
     font-size: 22px;
+    @include device_max(large) {
+			font-size: 17px;
+		}
 	}
 	.group-search {
 		.input-search {
@@ -93,6 +107,9 @@
 			i{
 				color: #fff;
 				font-size: 22px;
+				@include device_max(large) {
+					font-size: 17px;
+				}
 			}
 		}
 	}
@@ -100,17 +117,48 @@
 
 .head-menu {
 	margin-top: 35px;
+	@include device_max(large) {
+		text-align: left;
+		margin-top: 0;
+	}
 	.button-menu-mobile {
 
 	}
 	.head-menu-ul {
 		text-align: center;
+		@include device_max(large) {
+			text-align: left;
+			right: 0;
+			position: fixed;
+	    background: #1e1e1e;
+	    padding: 30px 20px;
+	    width: 210px;
+	    top: 0;
+	    overflow-y: auto;
+	    right: -210px;
+	    height: 100%;
+	    z-index: 9999;
+	    transition: all .3s cubic-bezier(1,.01,.29,.93);
+		}
 		li {
 			display: inline-block;
+			@include device_max(large) {
+				display: block;
+		    float: left;
+		    width: 100%;
+			}
 			a {
 		    font-size: 16px;
 		    color: #fff;
 		    padding: 0 14px;
+		    @include device_max(large) {
+					text-align: left;
+			    padding: 0;
+			    font-size: 14px;
+			    line-height: 35px;
+			    color: #fff;
+			    border-bottom: 1px solid rgba(225,225,225,.1);
+				}
 		    &:hover {
     	    color: #d0cd80;
 		    }

@@ -6,6 +6,12 @@
   right: 0;
   z-index: 999;
   background-color: #5f4c2e; }
+  @media (max-width: 1199px) {
+    .head-page {
+      opacity: .8 !important;
+      top: 0;
+      height: 70px;
+      padding: 0; } }
   .head-page.header-sticky {
     position: fixed;
     top: 0;
@@ -28,8 +34,10 @@
       .head-page.header-sticky .head-menu li .link-parent {
         display: block;
         line-height: 70px; }
-  .head-page .logo-pc img {
+  .head-page .logo-pc img, .head-page .logo-mobile img {
     width: 180px; }
+  .head-page .logo-mobile img {
+    width: 90px; }
   .head-page .logo-scroll {
     display: none;
     position: absolute;
@@ -48,6 +56,9 @@
   .search-shop-info a {
     color: #fff;
     font-size: 22px; }
+    @media (max-width: 1199px) {
+      .search-shop-info a {
+        font-size: 17px; } }
   .search-shop-info .group-search .input-search {
     height: 32px;
     width: 227px;
@@ -71,17 +82,53 @@
     .search-shop-info .group-search .btn-search i {
       color: #fff;
       font-size: 22px; }
+      @media (max-width: 1199px) {
+        .search-shop-info .group-search .btn-search i {
+          font-size: 17px; } }
 
 .head-menu {
   margin-top: 35px; }
+  @media (max-width: 1199px) {
+    .head-menu {
+      text-align: left;
+      margin-top: 0; } }
   .head-menu .head-menu-ul {
     text-align: center; }
+    @media (max-width: 1199px) {
+      .head-menu .head-menu-ul {
+        text-align: left;
+        right: 0;
+        position: fixed;
+        background: #1e1e1e;
+        padding: 30px 20px;
+        width: 210px;
+        top: 0;
+        overflow-y: auto;
+        right: -210px;
+        height: 100%;
+        z-index: 9999;
+        -webkit-transition: all 0.3s cubic-bezier(1, 0.01, 0.29, 0.93);
+        -o-transition: all 0.3s cubic-bezier(1, 0.01, 0.29, 0.93);
+        transition: all 0.3s cubic-bezier(1, 0.01, 0.29, 0.93); } }
     .head-menu .head-menu-ul li {
       display: inline-block; }
+      @media (max-width: 1199px) {
+        .head-menu .head-menu-ul li {
+          display: block;
+          float: left;
+          width: 100%; } }
       .head-menu .head-menu-ul li a {
         font-size: 16px;
         color: #fff;
         padding: 0 14px; }
+        @media (max-width: 1199px) {
+          .head-menu .head-menu-ul li a {
+            text-align: left;
+            padding: 0;
+            font-size: 14px;
+            line-height: 35px;
+            color: #fff;
+            border-bottom: 1px solid rgba(225, 225, 225, 0.1); } }
         .head-menu .head-menu-ul li a:hover {
           color: #d0cd80; }
 
