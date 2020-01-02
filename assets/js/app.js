@@ -134,14 +134,19 @@ jQuery(document).ready(function($) {
   /*==============================
       scroll opacity head-page
     ==============================*/
-  $(document).scroll(function(){
+  $(window).scroll(function(){
     var heightWindow = $(window).height();
     var setNum = heightWindow - 300;
     var top = $(this).scrollTop();
+
     if(top < setNum) {
       var dif = 1 - top / setNum;
       $(".head-page").css({opacity: dif});
     }
+   	var offset = 600, head_page = $('.head-page');
+    ($(this).scrollTop() < offset) ? head_page.removeClass('header-sticky') : head_page.addClass('header-sticky');
+    
 	});
 
+  
 });

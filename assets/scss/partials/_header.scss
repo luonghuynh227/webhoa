@@ -9,14 +9,95 @@
   right: 0;
   z-index: 999;
   background-color: #5f4c2e;
+  &.header-sticky {
+    position: fixed;
+    top: 0;
+    opacity: 1 !important;
+    bottom: auto;
+    padding: 0;
+    height: 70px;
+    opacity: 1;
+    -webkit-animation: sticky-ef .5s ease;
+    -moz-animation: sticky-ef .5s ease;
+    -ms-animation: sticky-ef .5s ease;
+    -o-animation: sticky-ef .5s ease;
+    animation: sticky-ef .5s ease;
+    .search-shop-info, .logo-pc {
+    	display: none;
+    }
+    .logo-scroll {
+    	display: block;
+    }
+    .head-menu {
+    	margin-top: 0;
+    	li {
+    		.link-parent {
+    			display: block;
+		    	line-height: 70px;
+    		}
+    	}
+    }
+  }
   .head-top {
 
 	}
 	.logo-pc {
-
+		img {
+			width: 180px;
+		}
+	}
+	.logo-scroll {
+		display: none;
+		position: absolute;
+    left: 5%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+		img {
+			width: 70px;
+		}
 	}
 	
 }
+
+.search-shop-info {
+	margin-left: auto;
+	a {
+		color: #fff;
+    font-size: 22px;
+	}
+	.group-search {
+		.input-search {
+			height: 32px;
+	    width: 227px;
+	    color: #fff;
+	    font-size: 16px;
+	    border-bottom: 1px solid #c7ab7b;
+	    &::placeholder {
+			  color: #fff;
+			}
+
+			&::-ms-input-placeholder { 
+			  color: #fff;
+			}
+
+			&::-ms-input-placeholder {
+			  color: #fff;
+			}
+		}
+		.btn-search {
+			margin-left: -30px;
+			i{
+				color: #fff;
+				font-size: 22px;
+			}
+		}
+	}
+}
+
 .head-menu {
 	margin-top: 35px;
 	.button-menu-mobile {
@@ -39,11 +120,17 @@
 }
 .menu-item-has-child {
 	position: relative;
+	&:hover {
+		.sub-menu {
+			top: 75px;
+	    opacity: 1;
+		}
+	}
 	.sub-menu {
 		position: absolute;
-		opacity: 1;
+		opacity: 0;
 		left: 0;
-		top: 60px;
+    top: 30px;
 		width: 400px;
     padding: 10px;
     transition: all .3s ease;
@@ -54,7 +141,7 @@
 	    position: absolute;
 	    border: 5px solid transparent;
 	    border-bottom-color: #111;
-	    left: 30px;
+	    left: 50px;
 	    top: -10px;
     }
     li {
@@ -74,5 +161,15 @@
         }
 	    }
     }
+	}
+}
+
+
+@keyframes sticky-ef {
+	0% {
+    transform: translateY(-100%);
+	}
+	100% {
+    transform: translateY(0);
 	}
 }
