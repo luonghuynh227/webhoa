@@ -63,13 +63,13 @@ jQuery(document).ready(function($) {
 
     // custom slider img
     
-    $('.banner-slider').append('<ul class="owl-num"><li class="index-item"></li><li class="total-item"></li></ul>');
+    // $('.banner-slider').append('<ul class="owl-num"><li class="index-item"></li><li class="total-item"></li></ul>');
     
-    var banner_slider, number = 1;
-    banner_slider = $('.list-banner-slider').owlCarousel({
+    $('.list-banner-slider').owlCarousel({
       items: 1,
       loop: true,
       mouseDrag: false,
+      touchDrag: false,
       nav:true,
       dots: false,
       animateOut: 'owl-fadeUp-out',
@@ -77,28 +77,24 @@ jQuery(document).ready(function($) {
       autoplay:true,
       smartSpeed:1500,
       addClassActive:true,
+      info: true,
+      // onInitialize: getCurrentIndex,
+      // onChanged: getCurrentIndex,
     });
-    banner_slider.on('translate.owl.carousel', function(e) {
-      getCurrentIndex();
-    })
 
-    getCurrentIndex();
-
+    // getCurrentIndex();
+    // var currentItem = 0;
     function getCurrentIndex() {
-      var totalItem = $('.list-banner-slider').attr('data-total');
-      if(totalItem > 0) {
-          var indexItem;
-          $('.list-banner-slider .owl-item').each(function(index) {
-              if($(this).hasClass("active"))
-              indexItem = index + 1;
-          });
-          if(indexItem < 10)
-              indexItem = "0" + indexItem;
-          if(totalItem < 10)
-              totalItem = "0" + totalItem;
-          $('.index-item').text(indexItem);
-          $('.total-item').text(totalItem);
+    	currentItem = currentItem + 1;
+  		console.log(currentItem);
+    	var totalItem = $('.list-banner-slider').attr('data-total');
+
+    	if (currentItem >= totalItem) {
+      	currentItem = 1;
       }
+
+  		$('.index-item').text('0' + currentItem);
+    	$('.total-item').text('0' + totalItem);
     }
 
   /*==============================
@@ -107,28 +103,26 @@ jQuery(document).ready(function($) {
 
   // full height screen
   function setHeightBanner() {
-      var heightWindow = $(window).height();
-      var widthWindow = $(window).width();
-      if (widthWindow >= 480) {
-          $('#banner-slider, .list-banner-slider, .item-banner-slider').height(heightWindow);
-      } else {
-          var heightFixMobile = heightWindow - 140;
-          $('#banner-slider, .list-banner-slider, .item-banner-slider').height(heightFixMobile);
-      }
-      var heightBanner = $('#banner-slider').height();
-      if($('.blog-intro').length!='' && heightWindow>730) heightBanner=730;
-      if (heightWindow > heightBanner && $("#banner-slider").length>0) {
-          $('#header, #banner-slider').css({
-              height: heightBanner + 'px'
-          });
+    var heightWindow = $(window).height();
+    var widthWindow = $(window).width();
+    if (widthWindow >= 480) {
+        $('#banner-slider, .list-banner-slider, .item-banner-slider').height(heightWindow);
+    } else {
+        var heightFixMobile = heightWindow - 140;
+        $('#banner-slider, .list-banner-slider, .item-banner-slider').height(heightFixMobile);
+    }
+    var heightBanner = $('#banner-slider').height();
+    if($('.blog-intro').length!='' && heightWindow>730) heightBanner=730;
+    if (heightWindow > heightBanner && $("#banner-slider").length>0) {
+        $('#header, #banner-slider').css({
+            height: heightBanner + 'px'
+        });
 
-      } else if (heightWindow <= heightBanner && $("#banner-slider").length>0) {
-          $('#header, #banner-slider').css({
-              height: heightWindow + 'px'
-          });
-      }
-
-
+    } else if (heightWindow <= heightBanner && $("#banner-slider").length>0) {
+        $('#header, #banner-slider').css({
+            height: heightWindow + 'px'
+        });
+    }
   };
   setHeightBanner();
   $(window).bind('resize', function () {
@@ -136,5 +130,18 @@ jQuery(document).ready(function($) {
   });
 
 
+
+  /*==============================
+      scroll opacity head-page
+    ==============================*/
+  $(document).scroll(function(){
+    var heightWindow = $(window).height();
+    var setNum = heightWindow - 300;
+    var top = $(this).scrollTop();
+    if(top < setNum) {
+      var dif = 1 - top / setNum;
+      $(".head-page").css({opacity: dif});
+    }
+	});
 
 });

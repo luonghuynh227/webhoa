@@ -34,6 +34,16 @@
   background-repeat: repeat-y;
 }
 
+.hidden-pc {
+  @include device_min(large) {
+    display: none;
+  }
+}
+.hidden-m {
+  @include device_max(large) {
+    display: none;
+  }
+}
 
 // Embed video
 .embed-responsive {
@@ -80,4 +90,15 @@ img {
   rgba(0,0,0,.3);
   display: none;
   cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style-type: none;
+  }
+}
+a:hover {
+  text-decoration: none;
 }
