@@ -161,4 +161,15 @@ jQuery(document).ready(function($) {
           $(this).fadeOut(300);
       });
   });
+
+  /*==============================
+      Click sub menu mobile
+    ==============================*/
+  $('.menu-item-has-child .submenu-plus').click(function () {
+      $(this).toggleClass('submenu-minus');
+      // $('.head-menu-ul').toggleClass('menu-mobile-show');
+      $('.sub-menu').fadeToggle();
+  });
+
+
 });

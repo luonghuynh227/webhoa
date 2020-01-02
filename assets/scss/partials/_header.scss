@@ -3,7 +3,7 @@
 
 .head-page {
 	position: absolute;
-  padding: 43px 0;
+  padding: 30px 0;
   bottom: 193px;
   left: 0;
   right: 0;
@@ -210,6 +210,9 @@
 		.sub-menu {
 			top: 75px;
 	    opacity: 1;
+	    @include device_max(large) {
+	    	top: 0;
+			}
 		}
 	}
 	.sub-menu {
@@ -221,6 +224,14 @@
     padding: 10px;
     transition: all .3s ease;
     background: #fff;
+    @include device_max(large) {
+    	background: transparent;
+			position: static;
+    	opacity: 1;
+    	width: 100%;
+    	padding: 0;
+    	display: none;
+		}
     &:before {
     	content: '';
 	    display: block;
@@ -229,23 +240,63 @@
 	    border-bottom-color: #111;
 	    left: 50px;
 	    top: -10px;
+	    @include device_max(large) {
+				display: none;
+			}
     }
     li {
     	width: 50%;
 	    float: left;
       text-align: left;
 	    display: block;
+	    @include device_max(large) {
+				width: 100%;
+			}
 	    a {
 	    	display: block;
 	    	color: #000;
         padding: 5px 15px;
 		    font-size: 14px;
         border-bottom: 1px solid rgba(225,225,225,.1);
+        @include device_max(large) {
+					font-size: 12px;
+					padding: 0;
+					padding-left: 30px;
+					color: #fff;
+				}
         &:hover {
         	color: #000;
         	text-decoration: underline;
+        	@include device_max(large) {
+						color: #fff;
+					}
         }
 	    }
+    }
+	}
+	.submenu-plus {
+		cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 3px;
+    @include device_min(large) {
+			display: none;
+		}
+    i {
+	    font-size: 18px;
+    	color: #fff;
+    	display: none;
+    	&.icon-plus-circled {
+    		display: block;
+    	}
+    }
+    &.submenu-minus {
+			.icon-plus-circled {
+    		display: none;
+    	}
+    	.icon-minus-circled {
+    		display: block;
+    	}
     }
 	}
 }
