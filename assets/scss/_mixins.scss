@@ -20,7 +20,8 @@
 @mixin form-control-focus($color: $input-border-focus) {
   $color-rgba: rgba(red($color), green($color), blue($color), .6);
   &:focus {
-    border-color: $color;
+    // border-color: $color;
+    border-color: #fff;
     outline: 0;
   }
 }

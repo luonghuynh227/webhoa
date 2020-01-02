@@ -1055,10 +1055,6 @@ address {
   .col-lg-offset-12 {
     margin-left: 100%; } }
 
-@media (min-width: 768px) {
-  .col-sm-4 {
-    width: 33.333333%; } }
-
 label {
   display: inline-block;
   max-width: 100%;
@@ -1103,7 +1099,7 @@ output {
   display: block;
   width: 100%;
   height: 46px;
-  padding: 10px 20px;
+  padding: 0;
   font-size: 14px;
   line-height: 1.5;
   color: #373737;
@@ -1115,7 +1111,7 @@ output {
   -o-transition: border-color ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s; }
   .form-control:focus {
-    border-color: #c7ab7c;
+    border-color: #fff;
     outline: 0; }
   .form-control::-moz-placeholder {
     color: #818181;
@@ -1661,8 +1657,8 @@ fieldset[disabled] a.btn {
     color: #c7ab7c;
     border-color: #c7ab7c; }
   .btn-primary:active:focus, .btn-primary:active, .btn-primary:hover, .btn-primary:focus {
-    background-color: #15928e;
-    border-color: #15928e; }
+    background-color: #b89458;
+    border-color: #b89458; }
 
 .btn-link {
   color: #373737;

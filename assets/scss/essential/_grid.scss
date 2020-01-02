@@ -84,7 +84,7 @@
 }
 
 .col-sm-4{
-  @include device_min(small) {
-    width: 33.333333%;
-  }
+  // @include device_min(small) {
+  //   width: 33.333333%;
+  // }
 }
