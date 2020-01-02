@@ -12,8 +12,13 @@
   @include device_max(large) {
 		opacity: .8 !important;
 		top: 0;
-    height: 70px;
+    height: 55px;
     padding: 0;
+	}
+	.container {
+		@include device_max(large) {
+			height: 55px;
+		}
 	}
   &.header-sticky {
     position: fixed;
@@ -23,12 +28,11 @@
     padding: 0;
     height: 70px;
     opacity: 1;
-    -webkit-animation: sticky-ef .5s ease;
-    -moz-animation: sticky-ef .5s ease;
-    -ms-animation: sticky-ef .5s ease;
-    -o-animation: sticky-ef .5s ease;
     animation: sticky-ef .5s ease;
-    .search-shop-info, .logo-pc {
+    @include device_max(large) {
+	    height: 55px;
+		}
+    .search-shop-info, .logo-pc, .logo-mobile {
     	display: none;
     }
     .logo-scroll {
@@ -54,7 +58,10 @@
 	}
 	.logo-mobile {
 		img {
-			width: 90px;
+			// width: 90px;
+			@include device_max(large) {
+				width: 60px;
+			}
 		}
 	}
 	.logo-scroll {
@@ -68,7 +75,7 @@
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
 		img {
-			width: 70px;
+			width: 55px;
 		}
 	}
 	
@@ -76,6 +83,7 @@
 
 .search-shop-info {
 	margin-left: auto;
+	margin-right: 6%;
 	a {
 		color: #fff;
     font-size: 22px;
@@ -90,6 +98,11 @@
 	    color: #fff;
 	    font-size: 16px;
 	    border-bottom: 1px solid #c7ab7b;
+	    @include device_max(large) {
+				height: 25px;
+		    width: 150px;
+		    font-size: 14px;
+			}
 	    &::placeholder {
 			  color: #fff;
 			}
@@ -104,6 +117,9 @@
 		}
 		.btn-search {
 			margin-left: -30px;
+			@include device_max(large) {
+		    margin-left: -25px;
+			}
 			i{
 				color: #fff;
 				font-size: 22px;
@@ -122,7 +138,18 @@
 		margin-top: 0;
 	}
 	.button-menu-mobile {
-
+		position: absolute;
+    right: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+		i {
+	    font-size: 22px;
+  		color: #fff;
+  		&:before {
+  			margin-left: 0;
+  			margin-right: 2%;
+  		}
+		}
 	}
 	.head-menu-ul {
 		text-align: center;
