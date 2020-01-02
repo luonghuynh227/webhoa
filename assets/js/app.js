@@ -179,5 +179,16 @@ jQuery(document).ready(function($) {
 		$(this).toggleClass('submenu-minus');
 	});
 
+  // Load page scroll
+  var href = window.location.href.split('#');
+  if (href.length > 1){
+      href[1] = "#" + href[1];
+      $.each($('.nav li a'), function() {
+          if ($(this).attr('href')==href[1]) {
+              $(this).click();
+          }
+      })
+  };
+
 
 });
