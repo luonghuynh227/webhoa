@@ -182,7 +182,7 @@
     opacity: 0;
     visibility: hidden;
     left: 0;
-    top: 30px;
+    top: 50px;
     width: 400px;
     padding: 10px;
     -webkit-transition: all .3s ease;
@@ -948,9 +948,10 @@ input, button {
         color: #d32323; }
 
 #awe-contact {
-  background-image: url(../images/contact.jpg);
+  background-image: url(../images/banner-home/Slider5.jpg);
   min-height: 400px;
-  padding: 75px 0; }
+  padding: 75px 0;
+  position: relative; }
 
 .contact-address {
   font-size: 16px; }
@@ -964,14 +965,14 @@ input, button {
     @media (max-width: 767px) {
       .contact-address aside {
         height: auto; } }
+  .contact-address a {
+    color: #000; }
   .contact-address h4 {
     margin-top: 0; }
   .contact-address .txt-shop {
     font-size: 28px; }
   .contact-address .txt-street {
     font-size: 18px; }
-  .contact-address .txt-telephone a {
-    color: #000; }
 
 .contact-form-data {
   padding: 55px 38px;

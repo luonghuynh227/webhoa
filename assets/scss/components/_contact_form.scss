@@ -1,7 +1,17 @@
 #awe-contact {
-	background-image: url(../images/contact.jpg);
+	background-image: url(../images/banner-home/Slider5.jpg);
 	min-height: 400px;
   padding: 75px 0;
+  position: relative;
+  &:before {
+  	// position: absolute;
+  	// content: '';
+  	// left: 0;
+  	// top: 0;
+  	// right: 0;
+  	// bottom: 0;
+  	// background: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .contact-address {
@@ -17,6 +27,9 @@
 			height: auto;
 		}
 	}
+	a {
+		color: #000;
+	}
 	h4 {
 		margin-top: 0;
 	}
@@ -27,9 +40,7 @@
 		font-size: 18px;
 	}
 	.txt-telephone {
-		a {
-			color: #000;
-		}
+		
 	}
 }
 
