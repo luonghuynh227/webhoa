@@ -1,0 +1,119 @@
+.pp-flower {
+	position: relative;
+  background-color: #fff;
+  max-width: 900px;
+  margin: 0 auto;
+  .item {
+  	max-height: 500px;
+    text-align: center;
+  }
+  img {
+    height: 500px;
+    object-fit: contain;
+  }
+  .pp-content {
+    position: relative;
+    padding: 19px 20px 51px 20px;
+  }
+  h4 {
+  	font-size: 18px;
+    color: #373737;
+    line-height: 1;
+    a {
+	    color: #373737;
+    }
+  }
+  .fv-price {
+    font-size: 24px;
+    font-style: italic;
+    color: #c7ab7b;
+    margin-top: 8px;
+  }
+  .suk-propup {
+    float: left;
+    margin-top: 6px;
+    font-size: 15px;
+    color: #292626;
+    .sku-wrapper {
+    	padding-right: 20px;
+	    font-size: 20px;
+	    font-weight: 600;
+	    color: #3a3a3a;
+    }
+  }
+  .add-to-cart {
+  	position: absolute;
+    margin: auto;
+    top: 50%;
+    right: 20px;
+    float: none;
+    transform: translateY(-50%);
+    a {
+    	display: inline-block;
+	    min-width: 197px;
+	    height: 46px;
+	    padding: 0 15px;
+	    font-size: 16px;
+	    line-height: 46px;
+	    color: #fff;
+	    text-align: center;
+      background: #c7ab7b;
+    }
+  }
+  .mfp-close {
+    right: 0;
+    margin: 0;
+    font-size: 0;
+    top: 0;
+    min-width: 179px;
+    height: 42px;
+    opacity: 1;
+    background: #c7ab7b url(../images/pp-close.png) no-repeat center center;
+  }
+}
+
+/* 
+
+====== Zoom effect ======
+
+*/
+.mfp-zoom-in {
+  
+  /* start state */
+  .mfp-with-anim {
+    opacity: 0;
+    transition: all 0.2s ease-in-out; 
+    transform: scale(0.8); 
+  }
+  
+  &.mfp-bg {
+    opacity: 0;
+	  transition: all 0.3s ease-out;
+  }
+  
+  /* animate in */
+  &.mfp-ready {
+    .mfp-with-anim {
+      opacity: 1;
+      transform: scale(1); 
+    }
+    &.mfp-bg {
+      opacity: 0.8;
+    }
+  }
+  
+  /* animate out */
+  &.mfp-removing {
+    
+    .mfp-with-anim {
+      transform: scale(0.8); 
+      opacity: 0;
+    }
+    &.mfp-bg {
+      opacity: 0;
+    }
+    
+  }
+  
+}
+

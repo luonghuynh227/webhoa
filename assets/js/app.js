@@ -1,5 +1,11 @@
 jQuery(document).ready(function($) {
     "use strict";
+  /*==============================
+        click lated post home
+  ==============================*/
+  $('body').on('click', '#lasted-post .item-flower', function() {
+    $(this).find("a.view").click();
+  });
 
   /*==============================
         cycle text contact
@@ -23,7 +29,7 @@ jQuery(document).ready(function($) {
           Scroll contact
   ==============================*/
 
-  $('a').on('click', function(event) {
+  $('nav li a').on('click', function(event) {
 	  var $anchor = $(this);
 	  if ( $anchor.attr('href').search("#") != -1 ) {
       console.log($anchor.attr('href'));
@@ -86,7 +92,7 @@ jQuery(document).ready(function($) {
       animateOut: 'owl-fadeUp-out',
       animateIn: 'owl-fadeUp-in',
       autoplay:true,
-      smartSpeed:1500,
+      // smartSpeed:1500,
       addClassActive:true,
     });
     owlbaner.on('changed.owl.carousel',function(property){
@@ -197,6 +203,22 @@ jQuery(document).ready(function($) {
           }
       })
   };
+
+
+  $('.popup-with-zoom-anim').magnificPopup({
+    type:'inline',
+    overflowY: 'auto',
+    removalDelay: 600,
+    closeBtnInside: true,
+    preloader: false,
+    mainClass: 'my-mfp-custom',
+    midClick: true,
+    callbacks: {
+      beforeOpen: function() {
+         this.st.mainClass = this.st.el.attr('data-effect');
+      }
+    },
+  });
 
 
 });

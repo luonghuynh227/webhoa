@@ -571,7 +571,7 @@ input, button {
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 9;
     opacity: 0; }
   .item-flower .view {
     display: inline-block;
@@ -1065,5 +1065,107 @@ input, button {
     margin-top: 20px;
     height: 58px;
     width: 215px; }
+
+.pp-flower {
+  position: relative;
+  background-color: #fff;
+  max-width: 900px;
+  margin: 0 auto; }
+  .pp-flower .item {
+    max-height: 500px;
+    text-align: center; }
+  .pp-flower img {
+    height: 500px;
+    -o-object-fit: contain;
+    object-fit: contain; }
+  .pp-flower .pp-content {
+    position: relative;
+    padding: 19px 20px 51px 20px; }
+  .pp-flower h4 {
+    font-size: 18px;
+    color: #373737;
+    line-height: 1; }
+    .pp-flower h4 a {
+      color: #373737; }
+  .pp-flower .fv-price {
+    font-size: 24px;
+    font-style: italic;
+    color: #c7ab7b;
+    margin-top: 8px; }
+  .pp-flower .suk-propup {
+    float: left;
+    margin-top: 6px;
+    font-size: 15px;
+    color: #292626; }
+    .pp-flower .suk-propup .sku-wrapper {
+      padding-right: 20px;
+      font-size: 20px;
+      font-weight: 600;
+      color: #3a3a3a; }
+  .pp-flower .add-to-cart {
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    right: 20px;
+    float: none;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+    .pp-flower .add-to-cart a {
+      display: inline-block;
+      min-width: 197px;
+      height: 46px;
+      padding: 0 15px;
+      font-size: 16px;
+      line-height: 46px;
+      color: #fff;
+      text-align: center;
+      background: #c7ab7b; }
+  .pp-flower .mfp-close {
+    right: 0;
+    margin: 0;
+    font-size: 0;
+    top: 0;
+    min-width: 179px;
+    height: 42px;
+    opacity: 1;
+    background: #c7ab7b url(../images/pp-close.png) no-repeat center center; }
+
+/* 
+
+====== Zoom effect ======
+
+*/
+.mfp-zoom-in {
+  /* start state */
+  /* animate in */
+  /* animate out */ }
+  .mfp-zoom-in .mfp-with-anim {
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8); }
+  .mfp-zoom-in.mfp-bg {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
+  .mfp-zoom-in.mfp-ready .mfp-with-anim {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
+  .mfp-zoom-in.mfp-ready.mfp-bg {
+    opacity: 0.8; }
+  .mfp-zoom-in.mfp-removing .mfp-with-anim {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0; }
+  .mfp-zoom-in.mfp-removing.mfp-bg {
+    opacity: 0; }
 
 /*# sourceMappingURL=main.css.map */
