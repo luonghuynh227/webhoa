@@ -1,5 +1,6 @@
 .banner-slider {
 	// visibility: hidden;
+	position: relative;
 	
 	.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
 		background: #fff url('../images/nav-slide-1.png') no-repeat left center;
@@ -11,7 +12,7 @@
     bottom: 40px;
     @include device_max(small) {
 			bottom: 203px;
-			right: 20px;
+			right: 92px;
 		}
 		button {
 			transition: all .3s linear;
@@ -41,6 +42,9 @@
     background-color: #fff;
     width: 50px;
     height: 50px;
+    @include device_max(small) {
+			bottom: 203px;
+		}
     &:after {
     	content: '';
 	    position: absolute;
