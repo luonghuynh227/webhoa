@@ -73,11 +73,12 @@ jQuery(document).ready(function($) {
 
     // custom slider img
     
-    // $('.banner-slider').append('<ul class="owl-num"><li class="index-item"></li><li class="total-item"></li></ul>');
+    $('.banner-slider').append('<ul class="owl-num-custom"><li class="index-item"></li><li class="total-item"></li></ul>');
     
-    $('.list-banner-slider').owlCarousel({
+    var owlbaner = $('.list-banner-slider').owlCarousel({
       items: 1,
-      loop: true,
+      loop: false,
+      rewind: true,
       mouseDrag: false,
       touchDrag: false,
       nav:true,
@@ -87,25 +88,32 @@ jQuery(document).ready(function($) {
       autoplay:true,
       smartSpeed:1500,
       addClassActive:true,
-      info: true,
-      // onInitialize: getCurrentIndex,
-      // onChanged: getCurrentIndex,
+    });
+    owlbaner.on('changed.owl.carousel',function(property){
+      var totalItem = $('.list-banner-slider .owl-item').length;
+      var current = property.item.index + 1;
+
+      $('.index-item').text('0' + current);
+      $('.total-item').text('0' + totalItem);
     });
 
-    // getCurrentIndex();
-    // var currentItem = 0;
+    getCurrentIndex();
     function getCurrentIndex() {
-    	currentItem = currentItem + 1;
-  		console.log(currentItem);
-    	var totalItem = $('.list-banner-slider').attr('data-total');
+      var totalItem = $('.banner-slider .owl-item').length;
+      if(totalItem > 0) {
+          var indexItem;
+          $('.list-banner-slider .owl-item').each(function(index) {
+            if($(this).hasClass("active"))
+            indexItem = index + 1;
+          });
+        indexItem = "0" + indexItem;
+        totalItem = "0" + totalItem;
 
-    	if (currentItem >= totalItem) {
-      	currentItem = 1;
+        $('.index-item').text(indexItem);
+        $('.total-item').text(totalItem);
       }
-
-  		$('.index-item').text('0' + currentItem);
-    	$('.total-item').text('0' + totalItem);
-    }
+  }
+    
 
   /*==============================
         setHeightBanner Banner slide

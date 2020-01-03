@@ -1,9 +1,6 @@
 .banner-slider {
 	// visibility: hidden;
-	.owl-item {
-		// position: relative;
-    // overflow: hidden;
-	}
+	
 	.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
 		background: #fff url('../images/nav-slide-1.png') no-repeat left center;
 	}
@@ -35,6 +32,45 @@
 				display: none;
 			}
 		}
+	}
+	.owl-num-custom {
+		position: absolute;
+    z-index: 9;
+    right: 41px;
+    bottom: 92px;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    &:after {
+    	content: '';
+	    position: absolute;
+	    display: block;
+	    width: 1px;
+	    height: 18px;
+	    background: #000;
+	    margin: auto;
+	    z-index: 100;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    transform: rotate(45deg);
+    }
+    li {
+	    position: absolute;
+	    font-family: 'utm_gods_word';
+	    font-size: 12px;
+	    line-height: 1em;
+	    color: #222;
+    }
+    .index-item {
+    	top: 12px;
+	    left: 10px;
+    }
+    .total-item {
+	    bottom: 14px;
+	    right: 10px;
+    }
 	}
 }
 .item-banner-slider {
