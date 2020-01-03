@@ -20,8 +20,8 @@
 	<body>	
   <div class="page-wrap">
     
-    <header id="header">
-  <div id="banner-slider" class="banner-slider">
+    <div id="header">
+      <div id="banner-slider" class="banner-slider">
 	<div class="list-banner-slider owl-carousel owl-theme" data-total="8">
 		<div class="item-banner-slider">
 			<div class="item-img" style="background-image: url(../assets/images/banner-home/Slider1.jpg);">
@@ -57,7 +57,7 @@
 		</div>
 	</div>
 </div>
-  <div class="head-page ">
+      <div class="head-page ">
   	<div class="container">
   		<div class="head-top d-flex flex-center">
   			<div class="logo-mobile hidden-pc">
@@ -152,9 +152,9 @@
 				</ul>
 			</nav>
   	</div>
-  </div>
-</header>
+</div>
 
+    </div>
     <div class="click-to-shop text-center">
 	<div class="container">
 		<a href="#" class="link-to-shop">
@@ -610,5 +610,23 @@
 <script src="assets/js/vendor.js"></script>
 <script src="assets/js/app.js"></script>
 
+  <script>
+    /*==============================
+        cycle text contact
+    ==============================*/
+
+    const contact_up = new CircleType(document.getElementById('contact-up')).radius(110);
+    const contact_sub = new CircleType(document.getElementById('contact-sub')).radius(110);
+
+    // social
+    const follow1 = new CircleType(document.getElementById('follow1')).radius(46);
+    const contact1 = new CircleType(document.getElementById('contact1')).radius(42);
+
+    const follow2 = new CircleType(document.getElementById('follow2')).radius(46);
+    const contact2 = new CircleType(document.getElementById('contact2')).radius(42);
+
+    const follow3 = new CircleType(document.getElementById('follow3')).radius(46);
+    const contact13= new CircleType(document.getElementById('contact3')).radius(42);
+  </script>
 	</body>
 </html>

@@ -7,22 +7,7 @@ jQuery(document).ready(function($) {
     $(this).find("a.view").click();
   });
 
-  /*==============================
-        cycle text contact
-  ==============================*/
-
-  const contact_up = new CircleType(document.getElementById('contact-up')).radius(110);
-	const contact_sub = new CircleType(document.getElementById('contact-sub')).radius(110);
-
-	// social
-	const follow1 = new CircleType(document.getElementById('follow1')).radius(46);
-	const contact1 = new CircleType(document.getElementById('contact1')).radius(42);
-
-	const follow2 = new CircleType(document.getElementById('follow2')).radius(46);
-	const contact2 = new CircleType(document.getElementById('contact2')).radius(42);
-
-	const follow3 = new CircleType(document.getElementById('follow3')).radius(46);
-	const contact13= new CircleType(document.getElementById('contact3')).radius(42);
+ 
 
 
   /*==============================
@@ -135,15 +120,15 @@ jQuery(document).ready(function($) {
         var heightFixMobile = heightWindow - 140;
         $('#banner-slider, .list-banner-slider, .item-banner-slider').height(heightFixMobile);
     }
-    var heightBanner = $('#banner-slider').height();
-    if($('.blog-intro').length!='' && heightWindow>730) heightBanner=730;
-    if (heightWindow > heightBanner && $("#banner-slider").length>0) {
-        $('#header, #banner-slider').css({
+    var heightBanner = $('#banner-image').height();
+    if($('.bg-banner-image').length!='' && heightWindow>730) heightBanner=730;
+    if (heightWindow > heightBanner && $("#banner-image").length>0) {
+        $('#header, #banner-image').css({
             height: heightBanner + 'px'
         });
 
-    } else if (heightWindow <= heightBanner && $("#banner-slider").length>0) {
-        $('#header, #banner-slider').css({
+    } else if (heightWindow <= heightBanner && $("#banner-image").length>0) {
+        $('#header, #banner-image').css({
             height: heightWindow + 'px'
         });
     }
@@ -204,6 +189,9 @@ jQuery(document).ready(function($) {
       })
   };
 
+  /*==============================
+      Click lated post product home
+    ==============================*/
 
   $('.popup-with-zoom-anim').magnificPopup({
     type:'inline',

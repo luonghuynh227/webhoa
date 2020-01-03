@@ -1,6 +1,9 @@
 @import "mixins";
 @import "custom_variables";
 
+#header {
+	position: relative;
+}
 .head-page {
 	position: absolute;
   padding: 20px 0;
