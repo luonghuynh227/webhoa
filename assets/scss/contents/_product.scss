@@ -1,0 +1,39 @@
+.our-flower {
+
+}
+
+.flower-content {
+
+}
+
+.filters {
+  padding: 0;
+  border: 6px solid #c7ab7b;
+  width: 82%;
+  margin-bottom: 45px;
+  @include device_max(480) {
+  	width: 100%;
+	}
+  li {
+  	display: inline-block;
+  	a {
+	    position: relative;
+	    display: block;
+	    font-family: 'utm_gods_word';
+	    font-size: 16px;
+	    text-align: center;
+	    padding: 0 19px;
+	    font-weight: 700;
+	    text-transform: uppercase;
+	    color: #696969;
+	    line-height: 40px;
+	    &:hover {
+	    	color: #c7ab7b;
+	    }
+  	}
+  }
+}
+
+.flower-filter {
+
+}
