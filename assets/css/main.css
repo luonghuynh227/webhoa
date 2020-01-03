@@ -202,7 +202,8 @@
         display: none;
         -webkit-transition: none;
         -o-transition: none;
-        transition: none; } }
+        transition: none;
+        visibility: visible; } }
     .menu-item-has-child .sub-menu:before {
       content: '';
       display: block;

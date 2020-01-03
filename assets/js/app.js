@@ -115,10 +115,10 @@ jQuery(document).ready(function($) {
     var heightWindow = $(window).height();
     var widthWindow = $(window).width();
     if (widthWindow >= 480) {
-        $('#banner-slider, .list-banner-slider, .item-banner-slider').height(heightWindow);
+        $('#banner-image, #banner-slider, .list-banner-slider, .item-banner-slider').height(heightWindow);
     } else {
         var heightFixMobile = heightWindow - 140;
-        $('#banner-slider, .list-banner-slider, .item-banner-slider').height(heightFixMobile);
+        $('#banner-image, #banner-slider, .list-banner-slider, .item-banner-slider').height(heightFixMobile);
     }
     var heightBanner = $('#banner-image').height();
     if($('.bg-banner-image').length!='' && heightWindow>730) heightBanner=730;
