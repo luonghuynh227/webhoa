@@ -417,8 +417,7 @@ input[type="submit"]:hover, button.submit:hover {
   transition: all 0.3s linear 0s; }
 
 .section-wrap {
-  padding-top: 50px;
-  margin-bottom: 30px; }
+  padding-top: 50px; }
 
 .line-section {
   width: 100%;
@@ -1244,6 +1243,7 @@ input[type="submit"]:hover, button.submit:hover {
 .cart-body {
   font-size: 17px;
   margin-top: 20px;
+  margin-bottom: 30px;
   font-weight: 300;
   line-height: 1.7;
   color: #4c4c4c; }
@@ -1434,6 +1434,9 @@ input[type="submit"]:hover, button.submit:hover {
     justify-content: flex-end; }
     .price-total .checkout-box .btn-checkout {
       text-align: center; }
+
+.checkout-content {
+  margin-bottom: 30px; }
 
 .billing-fields .panel-title {
   font-size: 18px; }
