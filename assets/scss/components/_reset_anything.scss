@@ -126,7 +126,10 @@ input, button {
   border: 0;
   background: transparent;
 }
-
+input[type="submit"]:hover {
+  background-color: #333;
+  transition: all 0.3s linear 0s;
+}
 
 
 .section-wrap {
