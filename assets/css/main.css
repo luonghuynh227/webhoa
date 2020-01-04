@@ -1119,6 +1119,9 @@ input, button {
 .flower-item {
   cursor: pointer;
   border-bottom: #c7ab7c 1px solid; }
+  @media (max-width: 479px) {
+    .flower-item {
+      width: 49% !important; } }
   .flower-item:hover .mark {
     opacity: .7;
     height: 100%; }
@@ -1141,6 +1144,9 @@ input, button {
     height: 450px;
     margin: 0 auto;
     max-width: 100%; }
+    @media (max-width: 479px) {
+      .flower-item .link-flower-item {
+        height: 260px; } }
   .flower-item .flower-img {
     height: 74%;
     width: auto;
@@ -1148,6 +1154,9 @@ input, button {
     top: 5%;
     right: 0;
     margin: 0 auto; }
+    @media (max-width: 479px) {
+      .flower-item .flower-img {
+        height: 50%; } }
   .flower-item .mark {
     position: absolute;
     width: 100%;
@@ -1164,7 +1173,6 @@ input, button {
     bottom: 0;
     opacity: 0;
     width: 100%;
-    text-align: center;
     z-index: 9;
     -webkit-transition: all .3s linear;
     -o-transition: all .3s linear;

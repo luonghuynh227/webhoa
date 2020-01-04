@@ -271,8 +271,6 @@ jQuery(document).ready(function($) {
     // container.imagesLoaded(function () {
     //     setColumns();
     // });
-
-
     $(window).bind('resize', function () {
         setProjects();
     });

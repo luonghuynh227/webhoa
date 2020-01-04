@@ -46,6 +46,9 @@
 .flower-item {
 	cursor: pointer;
 	border-bottom: #c7ab7c 1px solid;
+	@include device_max(480) {
+		width: 49% !important;
+	}
 	&:hover {
 		.mark {
 	    opacity: .7;
@@ -75,6 +78,9 @@
     height: 450px;
     margin: 0 auto;
     max-width: 100%;
+    @include device_max(480) {
+			height: 260px;
+		}
 	}
 	.flower-img {
 		height: 74%;
@@ -83,6 +89,9 @@
     top: 5%;
     right: 0;
     margin: 0 auto;
+    @include device_max(480) {
+			height: 50%;
+		}
 	}
 	.mark {
     position: absolute;
@@ -101,7 +110,6 @@
     bottom: 0;
     opacity: 0;
     width: 100%;
-    text-align: center;
     z-index: 9;
     transition: all .3s linear;
     i {
