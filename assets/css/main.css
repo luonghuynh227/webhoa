@@ -283,6 +283,16 @@
     color: #403f3f;
     line-height: 1.7em; }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield; }
+
 .f-open-sans {
   font-family: 'Open Sans'; }
 
@@ -959,7 +969,7 @@ input[type="submit"]:hover {
       font-size: 8px; }
     .social-content .link-social-content .contact-text {
       position: absolute;
-      bottom: -6px;
+      bottom: -8px;
       left: 50%;
       -webkit-transform: translateX(-50%) rotate(180deg);
       -ms-transform: translateX(-50%) rotate(180deg);
@@ -1240,6 +1250,7 @@ input[type="submit"]:hover {
 .shopping-cart-table thead tr {
   border-bottom: 1px solid #4d4d4d; }
   .shopping-cart-table thead tr th {
+    vertical-align: bottom;
     padding: 9px 12px; }
 
 @media (max-width: 767px) {
@@ -1401,9 +1412,12 @@ input[type="submit"]:hover {
     text-align: left; }
   .price-total .price-total, .price-total .price-tax {
     font-weight: 400;
-    padding-left: 80px;
+    padding-left: 60px;
     color: #c7ab7b;
     font-size: 20px; }
+    @media (max-width: 767px) {
+      .price-total .price-total, .price-total .price-tax {
+        font-size: 18px; } }
   .price-total .note-cart {
     margin-top: 20px; }
   .price-total .checkout-box {
@@ -1412,6 +1426,20 @@ input[type="submit"]:hover {
     justify-content: flex-end; }
     .price-total .checkout-box .btn-checkout {
       text-align: center; }
+
+.billing-fields .panel-title {
+  font-size: 18px; }
+
+.billing-fields .form-group {
+  padding: 3px;
+  margin: 0 0 6px; }
+  .billing-fields .form-group label {
+    color: #4c4c4c;
+    font-size: 15px;
+    text-transform: uppercase; }
+  .billing-fields .form-group input {
+    border: 0;
+    border-bottom: 1px solid #c7ab7b; }
 
 .pp-flower {
   position: relative;

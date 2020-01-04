@@ -22,6 +22,7 @@
 		tr {
 			border-bottom: 1px solid #4d4d4d;
 			th {
+		    vertical-align: bottom;
 		    padding: 9px 12px;
 			}
 		}
@@ -219,9 +220,12 @@
 	}
 	.price-total, .price-tax {
 		font-weight: 400;
-    padding-left: 80px;
+    padding-left: 60px;
 		color: #c7ab7b;
     font-size: 20px;
+    @include device_max(small) {
+	  	font-size: 18px;
+		}
 	}
 	.note-cart {
 		margin-top: 20px;

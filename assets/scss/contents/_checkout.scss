@@ -1,0 +1,21 @@
+.checkout-content {
+
+}
+.billing-fields {
+	.panel-title {
+		font-size: 18px;
+	}
+	.form-group {
+    padding: 3px;
+    margin: 0 0 6px;
+    label {
+    	color: #4c4c4c;
+	    font-size: 15px;
+	    text-transform: uppercase;
+    }
+    input {
+    	border: 0;
+	    border-bottom: 1px solid #c7ab7b;
+    }
+	}
+}
