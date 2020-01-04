@@ -1113,6 +1113,97 @@ input, button {
       line-height: 40px; }
       .filters li a:hover {
         color: #c7ab7b; }
+  .filters .select-filter a {
+    color: #c7ab7b; }
+
+.flower-item {
+  cursor: pointer;
+  border-bottom: #c7ab7c 1px solid; }
+  .flower-item:hover .mark {
+    opacity: .7;
+    height: 100%; }
+  .flower-item:hover .caption {
+    background-color: #949c38;
+    color: #fff; }
+    .flower-item:hover .caption h4 {
+      color: #fff; }
+  .flower-item:hover .icon-custom {
+    opacity: 1; }
+    .flower-item:hover .icon-custom i:hover {
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg); }
+  .flower-item .link-flower-item {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 280px;
+    height: 450px;
+    margin: 0 auto;
+    max-width: 100%; }
+  .flower-item .flower-img {
+    height: 74%;
+    width: auto;
+    left: 0;
+    top: 5%;
+    right: 0;
+    margin: 0 auto; }
+  .flower-item .mark {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    background: #fff;
+    left: 0;
+    bottom: 0;
+    opacity: 0; }
+  .flower-item .icon-custom {
+    position: absolute;
+    height: 33px;
+    margin: auto;
+    top: -150px;
+    bottom: 0;
+    opacity: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 9;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear; }
+    .flower-item .icon-custom i {
+      display: inline-block;
+      width: 33px;
+      height: 33px;
+      border: 3px solid #c9ae80;
+      border-radius: 50%;
+      font-size: 18px;
+      margin: 3px;
+      -webkit-transition: all .3s linear;
+      -o-transition: all .3s linear;
+      transition: all .3s linear; }
+  .flower-item .caption {
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 15px 5px;
+    z-index: 9;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    color: #4c4c4c; }
+    .flower-item .caption h4 {
+      color: #4c4c4c;
+      font-size: 20px;
+      overflow: hidden;
+      line-height: 36px;
+      width: 100%;
+      height: 36px;
+      padding: 0;
+      margin: 0; }
+    .flower-item .caption .sw-price {
+      font-size: 16px;
+      margin-bottom: 0; }
 
 .pp-flower {
   position: relative;

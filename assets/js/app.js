@@ -208,5 +208,74 @@ jQuery(document).ready(function($) {
     },
   });
 
+  /*==============================
+      flower-filter with isotope js
+    ==============================*/
+  var container = $('#flower-wrap');
+    container.isotope({
+      animationEngine : 'best-available',
+      animationOptions: {
+          duration: 200,
+          queue: false
+      },
+      layoutMode: 'fitRows'
+    });
+
+    $('#filters a').click(function(e){
+      e.preventDefault();
+      $('.select-filter').removeClass('select-filter');
+      $(this).parent('li').addClass('select-filter');
+      var selector = $(this).attr('data-filter');
+      $('#flower-wrap').isotope({ filter: selector });
+      setProjects();
+      return false;
+    });
+    function splitColumns() {
+      var winWidth = $(window).width(),
+          columnNumb = 1;
+      if (winWidth > 1200) {
+      // Large devices Desktops (â‰¥1200px)
+          columnNumb = 4;
+      } else if (winWidth > 992) {
+      // Medium devices Desktops (â‰¥992px)
+          columnNumb = 3; 
+      } else if (winWidth > 768) {
+      // Small devices Tablets (â‰¥768px)
+          columnNumb = 2; 
+      } else if (winWidth > 480) {
+      // Small devices Tablets (â‰¥480px)
+          columnNumb = 2; 
+      } else if (winWidth < 480) {
+      // Extra small devices Phones (>480px)
+          columnNumb = 1;
+      }
+      return columnNumb;
+    }
+
+    function setColumns() {
+      var winWidth = $('.our-flower .container').width(),
+      columnNumb = splitColumns(),
+      postWidth = Math.floor(winWidth / columnNumb);
+      postWidth = postWidth-1;
+      container.find('.flower-item').each(function () {
+        $(this).css( {
+            width : postWidth + 'px'
+        });
+      });
+    }
+    setProjects();
+    function setProjects() {
+      setColumns();
+      // container.isotope('reLayout');
+    }
+    // container.imagesLoaded(function () {
+    //     setColumns();
+    // });
+
+
+    $(window).bind('resize', function () {
+        setProjects();
+    });
+
 
 });
