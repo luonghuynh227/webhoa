@@ -1,0 +1,37 @@
+.single-product {
+	.post-image {
+		overflow: hidden;
+		img {
+	    height: auto;
+	    max-width: 100%;
+	    width: auto;
+	    object-fit: contain !important;
+	    max-height: 500px;
+		}
+	}
+	.product-title {
+		font-size: 24px;
+    text-transform: uppercase;
+	}
+	.price {
+		font-size: 20px;
+    color: #c7ab7b;
+	}
+	form.cart {
+		margin-bottom: 20px;
+	}
+	.wrap-qty {
+		.input-qty {
+	    min-width: 197px;
+    	width: 80%;
+		}
+	}
+	.product-meta {
+		.product-sku {
+	    padding-right: 20px;
+	    font-size: 20px;
+	    font-weight: 600;
+	    color: #3a3a3a;
+		}
+	}
+}

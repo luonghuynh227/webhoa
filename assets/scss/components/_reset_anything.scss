@@ -48,6 +48,13 @@ input[type=number] {
   margin-right: auto;
 }
 
+.f-left {
+  float: left;
+}
+.f-right {
+  float: right;
+}
+
 .line-title {
   width: 87px;
   height: 7px;
@@ -141,11 +148,33 @@ input, button {
   border: 0;
   background: transparent;
 }
+input[type="number"], input[type="email"], input[type="password"], input[type="text"] {
+  border: 1px solid #c7ab7b;
+  color: #373737;
+  font-size: 17px;
+  padding: 0 12px;
+  height: 46px;
+}
 input[type="submit"]:hover, button.submit:hover {
   background-color: #333;
   transition: all 0.3s linear 0s;
 }
 
+button.submit {
+  display: inline-block;
+  min-width: 197px;
+  height: 46px;
+  padding: 0 15px;
+  font-family: 'utm_gods_word';
+  font-size: 16px;
+  font-style: italic;
+  line-height: 46px;
+  color: #fff;
+  background-color: #c7ab7b;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+}
 
 .section-wrap {
   padding-top: 50px;

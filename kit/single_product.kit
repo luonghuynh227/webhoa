@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<!-- $title = Hoa hồng - B&P's Florist -->
+		<!-- @import partials/head -->
+		<!-- @import partials/stylesheets -->
+	</head>
+
+	<body>	
+  <div class="page-wrap cart-page">
+    
+    <div id="header">
+      <!-- @import components/banner_image -->
+      <style>
+        #banner-image .bg-banner-image{
+          background-image: url(../assets/images/banner-child/banner-wrap-1.jpg);
+        }
+      </style>
+      <!-- @import partials/header -->
+    </div>
+  	<div class="content-sort">
+  		<!-- @import contents/single_product -->
+      <!-- @import components/newsletter -->
+  	</div>
+  </div>
+	<!-- @import partials/footer -->
+  <!-- @import partials/javascripts -->
+  <script>
+    /*==============================
+        cycle text contact
+    ==============================*/
+
+    // social
+    const follow_1 = new CircleType(document.getElementById('follow_1')).radius(46);
+    const contact_1 = new CircleType(document.getElementById('contact_1')).radius(42);
+
+    const follow_2 = new CircleType(document.getElementById('follow_2')).radius(46);
+    const contact_2 = new CircleType(document.getElementById('contact_2')).radius(42);
+
+    const follow_3 = new CircleType(document.getElementById('follow_3')).radius(46);
+    const contact_3= new CircleType(document.getElementById('contact_3')).radius(42);
+  </script>
+	</body>
+</html>
