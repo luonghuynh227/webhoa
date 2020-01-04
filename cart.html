@@ -225,7 +225,7 @@
 								<tr>
 									<td class="actions" colspan="6">
 										<div class="checkout-box">
-											<input type="submit" class="submit text-uppercase" name="update_cart" value="CẬP NHẬT">
+											<input type="submit" class="submit btn-update text-uppercase" name="update_cart" value="CẬP NHẬT">
 											<div class="cont-shop">
                     		<a href="">
                     			<input type="submit" class="submit text-uppercase continue-shopping" name="continue_shop" value="XEM CỬA HÀNG">
@@ -238,6 +238,42 @@
 							</tbody>
 						</table>
 					</form>
+
+					<div class="price-total f-open-sans">
+						<div class="cart-total-all">
+							<h2>Tổng đơn hàng</h2>
+							<table>
+								<tbody>
+									<tr class="checkout-box cart-subtotal">
+										<th>Đơn hàng tạm</th>
+										<td class="price-total f-open-sans">
+											<span>2.560.000</span> đ
+										</td>
+									</tr>
+									<tr class="tax-rate">
+										<th>Phí ship</th>
+										<td class="price-tax f-open-sans">
+											<span>12.000</span> đ
+										</td>
+									</tr>
+									<tr class="checkout-box order-total">
+										<th>Tổng đơn hàng</th>
+										<td class="price-total f-open-sans">
+											<strong>
+												<span>2.498.000</span> đ
+											</strong>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="note-cart">
+								<p>Chú ý: Quý khách vui lòng kiểm tra thông tin đơn hàng trước khi thanh toán</p>
+							</div>
+							<div class="checkout-box d-flex">
+								<button class="submit f-utm-gods-word text-uppercase  btn-checkout" type="button">Thanh toán</button>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -269,20 +305,20 @@
 					<div class="social-content">
 						<!-- fb -->
 						<a href="#" class="link-social-content social-icon">
-							<p id="follow1" class="follow-text text-ci text-ci-1">THEO DÕI KÊNH</p>
-		          <p id="contact1" class="contact-text text-ci text-ci-2">LIÊN HỆ CHÚNG TÔI</p>
+							<p id="follow_1" class="follow-text text-ci text-ci-1">THEO DÕI KÊNH</p>
+		          <p id="contact_1" class="contact-text text-ci text-ci-2">LIÊN HỆ CHÚNG TÔI</p>
 							<i class="icon icon-facebook"></i>
 						</a>
 						<!-- instagram -->
 						<a href="#" class="link-social-content social-icon">
-							<p id="follow2" class="follow-text text-ci text-ci-1">THEO DÕI KÊNH</p>
-		          <p id="contact2" class="contact-text text-ci text-ci-2">LIÊN HỆ CHÚNG TÔI</p>
+							<p id="follow_2" class="follow-text text-ci text-ci-1">THEO DÕI KÊNH</p>
+		          <p id="contact_2" class="contact-text text-ci text-ci-2">LIÊN HỆ CHÚNG TÔI</p>
 							<i class="icon icon-instagram"></i>
 						</a>
 						<!-- yelp -->
 						<a href="#" class="link-social-content social-icon">
-							<p id="follow3" class="follow-text text-ci text-ci-1">THEO DÕI KÊNH</p>
-		          <p id="contact3" class="contact-text text-ci text-ci-2">LIÊN HỆ CHÚNG TÔI</p>
+							<p id="follow_3" class="follow-text text-ci text-ci-1">THEO DÕI KÊNH</p>
+		          <p id="contact_3" class="contact-text text-ci text-ci-2">LIÊN HỆ CHÚNG TÔI</p>
 							<i class="icon icon-yelp"></i>
 						</a>
 					</div>
@@ -300,13 +336,28 @@
 </footer>
 
   <script src="assets/js/jquery-3.4.1.min.js"></script>
-<script src="assets/js/isotope.pkgd.min.js"></script>
 <script src="assets/js/circletype.min.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
 <script src="assets/js/jquery.easing.min.js"></script>
 <script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/jquery.magnific-popup.min.js"></script>
 <script src="assets/js/vendor.js"></script>
 <script src="assets/js/app.js"></script>
 
+  <script>
+    /*==============================
+        cycle text contact
+    ==============================*/
+
+    // social
+    const follow_1 = new CircleType(document.getElementById('follow_1')).radius(46);
+    const contact_1 = new CircleType(document.getElementById('contact_1')).radius(42);
+
+    const follow_2 = new CircleType(document.getElementById('follow_2')).radius(46);
+    const contact_2 = new CircleType(document.getElementById('contact_2')).radius(42);
+
+    const follow_3 = new CircleType(document.getElementById('follow_3')).radius(46);
+    const contact_3= new CircleType(document.getElementById('contact_3')).radius(42);
+  </script>
 	</body>
 </html>

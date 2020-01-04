@@ -1228,8 +1228,9 @@ input[type="submit"]:hover {
 .cart-body {
   font-size: 17px;
   margin-top: 20px;
+  margin-bottom: 30px;
   font-weight: 300;
-  line-height: 1.9em;
+  line-height: 1.7;
   color: #4c4c4c; }
 
 @media (max-width: 767px) {
@@ -1371,10 +1372,46 @@ input[type="submit"]:hover {
   height: 58px;
   line-height: 1;
   font-size: 20px;
-  color: #fff; }
+  color: #fff;
+  font-style: italic; }
+  @media (max-width: 767px) {
+    .checkout-box .submit {
+      text-align: left;
+      margin-top: 20px; } }
+  @media (max-width: 479px) {
+    .checkout-box .submit {
+      width: 100%;
+      min-width: 0; } }
 
-.cont-shop {
-  float: left; }
+.checkout-box .btn-update {
+  float: right; }
+  @media (max-width: 767px) {
+    .checkout-box .btn-update {
+      float: none; } }
+
+@media (max-width: 767px) {
+  .cont-shop {
+    margin-bottom: 30px; } }
+
+.price-total {
+  font-weight: 400; }
+  .price-total td, .price-total th {
+    padding: 10px 20px 10px 0;
+    font-size: 15px;
+    text-align: left; }
+  .price-total .price-total, .price-total .price-tax {
+    font-weight: 400;
+    padding-left: 80px;
+    color: #c7ab7b;
+    font-size: 20px; }
+  .price-total .note-cart {
+    margin-top: 20px; }
+  .price-total .checkout-box {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+    .price-total .checkout-box .btn-checkout {
+      text-align: center; }
 
 .pp-flower {
   position: relative;

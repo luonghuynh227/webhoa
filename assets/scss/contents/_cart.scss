@@ -6,8 +6,9 @@
 .cart-body {
 	font-size: 17px;
   margin-top: 20px;
+  margin-bottom: 30px;
   font-weight: 300;
-  line-height: 1.9em;
+  line-height: 1.7;
   color: #4c4c4c;
 }
 .list-cart {
@@ -185,8 +186,51 @@
     line-height: 1;
     font-size: 20px;
     color: #fff;
+    font-style: italic;
+    @include device_max(small) {
+    	text-align: left;
+    	margin-top: 20px;
+		}
+		@include device_max(480) {
+    	width: 100%;
+	  	min-width: 0;
+		}
+	}
+	.btn-update {
+		float: right;
+		@include device_max(small) {
+    	float: none;
+		}
 	}
 }
 .cont-shop {
-	float: left;
+	@include device_max(small) {
+  	margin-bottom: 30px;
+	}
+}
+
+
+.price-total {
+	font-weight: 400;
+	td, th {
+		padding: 10px 20px 10px 0;
+    font-size: 15px;
+    text-align: left;
+	}
+	.price-total, .price-tax {
+		font-weight: 400;
+    padding-left: 80px;
+		color: #c7ab7b;
+    font-size: 20px;
+	}
+	.note-cart {
+		margin-top: 20px;
+	}
+	.checkout-box {
+		justify-content: flex-end;
+		.btn-checkout {
+			text-align: center;
+		}
+	}
+	
 }

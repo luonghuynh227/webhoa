@@ -7,7 +7,6 @@ jQuery(document).ready(function($) {
     $(this).find("a.view").click();
   });
 
- 
 
 
   /*==============================
@@ -230,7 +229,7 @@ jQuery(document).ready(function($) {
       setProjects();
       return false;
     });
-    
+
     function splitColumns() {
       var winWidth = $(window).width(),
           columnNumb = 1;
