@@ -1453,7 +1453,10 @@ input[type="submit"]:hover, button.submit:hover {
   color: #4c4c4c;
   font-size: 16px; }
   .shop-cart-checkout thead tr th {
-    font-weight: 700; }
+    font-weight: 700;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  .shop-cart-checkout tbody tr td {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
 
 .pp-flower {
   position: relative;

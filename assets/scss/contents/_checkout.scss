@@ -30,6 +30,14 @@
 		tr {
 			th {
 				font-weight: 700;
+				border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+			}
+		}
+	}
+	tbody {
+		tr {
+			td {
+				border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 			}
 		}
 	}
