@@ -31,9 +31,11 @@
 		}
 	}
 	tr {
+		th {
+			color: #4c4c4c;
+		}
 		.td-small {
 			font-size: 20px;
-	    color: #373737;
 	    @include device_max(small) {
 	    	font-size: 14px;
 			}

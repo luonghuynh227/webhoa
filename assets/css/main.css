@@ -1257,9 +1257,11 @@ input[type="submit"]:hover {
   .shopping-cart-table thead {
     display: none; } }
 
+.shopping-cart-table tr th {
+  color: #4c4c4c; }
+
 .shopping-cart-table tr .td-small {
-  font-size: 20px;
-  color: #373737; }
+  font-size: 20px; }
   @media (max-width: 767px) {
     .shopping-cart-table tr .td-small {
       font-size: 14px; } }

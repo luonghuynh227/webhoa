@@ -1055,6 +1055,52 @@ address {
   .col-lg-offset-12 {
     margin-left: 100%; } }
 
+table {
+  background-color: transparent; }
+
+caption {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #818181;
+  text-align: left; }
+
+th {
+  text-align: center;
+  font-weight: normal; }
+
+td {
+  font-weight: bold; }
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 21px; }
+  .table > thead > tr > th,
+  .table > thead > tr > td,
+  .table > tbody > tr > th,
+  .table > tbody > tr > td,
+  .table > tfoot > tr > th,
+  .table > tfoot > tr > td {
+    line-height: 1.5;
+    vertical-align: top; }
+  .table > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #818181;
+    padding: 7px; }
+  .table > tbody > tr > td {
+    padding: 18px; }
+  .table > caption + thead > tr:first-child > th,
+  .table > caption + thead > tr:first-child > td,
+  .table > colgroup + thead > tr:first-child > th,
+  .table > colgroup + thead > tr:first-child > td,
+  .table > thead:first-child > tr:first-child > th,
+  .table > thead:first-child > tr:first-child > td {
+    border-top: 0; }
+  .table > tbody + tbody {
+    border-top: 2px solid #818181; }
+  .table .table {
+    background-color: #FFF; }
+
 label {
   display: inline-block;
   max-width: 100%;
