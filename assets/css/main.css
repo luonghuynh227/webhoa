@@ -952,6 +952,7 @@ button.submit {
     height: 46px;
     padding: 0 12px;
     width: 100%;
+    border: 0;
     border-bottom: 1px solid #9f9485;
     color: #9f9485; }
     .newsletter-form input::-webkit-input-placeholder {
