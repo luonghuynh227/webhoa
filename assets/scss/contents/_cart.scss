@@ -6,7 +6,7 @@
 .cart-body {
 	font-size: 17px;
   margin-top: 20px;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
   font-weight: 300;
   line-height: 1.7;
   color: #4c4c4c;
@@ -197,6 +197,7 @@
 		@include device_max(480) {
     	width: 100%;
 	  	min-width: 0;
+	  	text-align: center;
 		}
 	}
 	.btn-update {

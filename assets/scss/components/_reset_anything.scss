@@ -39,6 +39,9 @@ input[type=number] {
 	justify-content: center;
   align-items: center;
 }
+.d-flex.jus-cont-end {
+  justify-content: flex-end;
+}
 
 .mlr-auto {
   margin-left: auto;
@@ -146,4 +149,5 @@ input[type="submit"]:hover {
 
 .section-wrap {
   padding-top: 50px;
+  margin-bottom: 30px;
 }

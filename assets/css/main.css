@@ -324,6 +324,11 @@ input[type=number] {
   -ms-flex-align: center;
   align-items: center; }
 
+.d-flex.jus-cont-end {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
 .mlr-auto {
   margin-left: auto;
   margin-right: auto; }
@@ -412,7 +417,8 @@ input[type="submit"]:hover {
   transition: all 0.3s linear 0s; }
 
 .section-wrap {
-  padding-top: 50px; }
+  padding-top: 50px;
+  margin-bottom: 30px; }
 
 .line-section {
   width: 100%;
@@ -1238,7 +1244,6 @@ input[type="submit"]:hover {
 .cart-body {
   font-size: 17px;
   margin-top: 20px;
-  margin-bottom: 30px;
   font-weight: 300;
   line-height: 1.7;
   color: #4c4c4c; }
@@ -1394,7 +1399,8 @@ input[type="submit"]:hover {
   @media (max-width: 479px) {
     .checkout-box .submit {
       width: 100%;
-      min-width: 0; } }
+      min-width: 0;
+      text-align: center; } }
 
 .checkout-box .btn-update {
   float: right; }
@@ -1441,7 +1447,13 @@ input[type="submit"]:hover {
     text-transform: uppercase; }
   .billing-fields .form-group input {
     border: 0;
-    border-bottom: 1px solid #c7ab7b; }
+    border-bottom: 1px solid #e5e5e5; }
+
+.shop-cart-checkout {
+  color: #4c4c4c;
+  font-size: 16px; }
+  .shop-cart-checkout thead tr th {
+    font-weight: 700; }
 
 .pp-flower {
   position: relative;

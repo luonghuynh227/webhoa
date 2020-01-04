@@ -13,14 +13,14 @@ caption {
   text-align: left;
 }
 th {
-  text-align: center;
+  text-align: left;
   // text-transform: uppercase;
   // color: $gray-light;
   font-weight: normal;
 }
 
 td{
-  font-weight: bold;
+  // font-weight: bold;
   // text-align: center;
 }
 
@@ -49,12 +49,14 @@ td{
   > thead > tr > th {    
     // font-size: .875rem;
     vertical-align: bottom;
-    border-bottom: 1px solid $table-border-color;
-    padding: 7px;
+    // border-bottom: 1px solid $table-border-color;
+    border-top: 1px solid rgba(0,0,0,.1);
+    padding: 7px 0;
   }
 
   > tbody > tr > td{
-    padding: 18px;
+    padding: 18px 0;
+    border-top: 1px solid rgba(0,0,0,.1);
   }
 
   // Remove top border from thead by default

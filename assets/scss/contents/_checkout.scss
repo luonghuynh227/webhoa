@@ -15,7 +15,22 @@
     }
     input {
     	border: 0;
-	    border-bottom: 1px solid #c7ab7b;
+	    border-bottom: 1px solid #e5e5e5;
     }
+	}
+}
+
+.info-cart-checkout {
+
+}
+.shop-cart-checkout {
+  color: #4c4c4c;
+  font-size: 16px;
+	thead {
+		tr {
+			th {
+				font-weight: 700;
+			}
+		}
 	}
 }
