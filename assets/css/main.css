@@ -1616,6 +1616,9 @@ button.submit {
   width: 25%;
   margin-top: 20px;
   margin-bottom: 20px; }
+  @media (max-width: 1199px) {
+    .search-item {
+      width: 33.33333%; } }
   @media (max-width: 767px) {
     .search-item {
       width: 50%; } }
@@ -1644,8 +1647,7 @@ button.submit {
   .search-item .caption-search {
     padding: 20px;
     float: left;
-    width: 100%;
-    height: 95px; }
+    width: 100%; }
     .search-item .caption-search h4 {
       margin: 0;
       font-size: 22px;

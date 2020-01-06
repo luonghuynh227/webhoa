@@ -10,6 +10,9 @@
 	width: 25%;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	@include device_max(large) {
+		width: 33.33333%;
+	}
 	@include device_max(small) {
 		width: 50%;
 	}
@@ -46,7 +49,7 @@
     padding: 20px;
     float: left;
     width: 100%;
-    height: 95px;
+    // height: 95px;
     h4 {
     	margin: 0;
 	    font-size: 22px;
