@@ -211,7 +211,7 @@
 	position: relative;
 	&:hover {
 		.sub-menu {
-			top: 75px;
+			top: 60px;
 	    opacity: 1;
       visibility: visible;
 	    @include device_max(large) {
