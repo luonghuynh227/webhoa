@@ -1074,7 +1074,7 @@ button.submit {
         color: #d32323; }
 
 #awe-contact {
-  background-image: url(../images/banner-home/Slider8.jpg);
+  background-image: url(../images/banner-child/slide-1.jpg);
   min-height: 400px;
   padding: 75px 0;
   position: relative; }
@@ -1159,6 +1159,9 @@ button.submit {
     margin-top: 20px;
     height: 58px;
     width: 215px; }
+    .contact-form-data form button:hover {
+      background-color: #333;
+      border: none; }
 
 .banner-image {
   position: relative;
