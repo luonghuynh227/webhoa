@@ -1,0 +1,85 @@
+.blog-content {
+
+}
+.post-single {
+	position: relative;
+	margin-bottom: 80px;
+	.post-title {
+		font-size: 40px;
+    margin-bottom: 43px;
+    color: #4e4e4d;
+    font-weight: 600;
+    line-height: 40px;
+	}
+	.post-image {
+		position: relative;
+		img {
+	    width: auto;
+	    object-fit: contain !important;
+	    max-height: 500px;
+		}
+	}
+	.post-date {
+    position: absolute;
+    width: 90px;
+    top: 0;
+    left: 0;
+    border-right: 5px solid #c7ab7b;
+    text-align: center;
+    font-size: 16px;
+    color: #c7ab7b;
+    .post-day {
+    	font-family: 'Open Sans', sans-serif;
+	    font-size: 60px;
+	    font-weight: 600;
+	    line-height: 0.7em;
+	    &:after {
+	    	content: '';
+		    display: block;
+		    background: url(../images/line-pattern-6.png) no-repeat;
+		    width: 65px;
+		    height: 15px;
+		    margin: 6px auto;
+	    }
+    }
+	}
+	.post-info {
+		color: #c7ab7c;
+		span {
+			color: #4c4b4b;
+		}
+	}
+	.post-short-content {
+		margin-top: 20px;
+		font-size: 16px;
+    line-height: 31px;
+    color: #4c4b4b;
+	}
+	.post-control {
+		.read-more {
+	    position: relative;
+	    display: inline-block;
+	    line-height: 38px;
+	    margin-top: 22px;
+      background: #5f4c2e;
+	    padding: 7px 19px;
+	    color: #fff;
+	    font-size: 16px;
+	    &:after {
+	    	content: '';
+		    display: block;
+		    position: absolute;
+		    border-top: 1px solid #c7ab7c;
+		    width: 100%;
+		    top: 0;
+		    left: 0;
+		    transition: all .3s ease;
+	    }
+	    &:hover {
+	    	&:after {
+	    		top: 100%;
+	    	}
+	    }
+		}
+	}
+}
