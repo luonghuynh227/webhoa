@@ -14,6 +14,19 @@
   }
 }
 
+.contact-row {
+	.ct-left {
+		@include device_min(small) {
+			padding-right: 10px;
+		}
+	}
+	.ct-right {
+		@include device_min(small) {
+			padding-left: 10px;
+		}
+	}
+}
+
 .contact-address {
 	font-size: 16px;
 	@include device_max(small) {
