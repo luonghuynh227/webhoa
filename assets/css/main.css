@@ -1314,7 +1314,7 @@ button.submit {
     line-height: 40px; }
     @media (max-width: 767px) {
       .post-single .post-title {
-        font-size: 30px; } }
+        font-size: 35px; } }
   .post-single .post-image {
     position: relative; }
     .post-single .post-image img {
@@ -1377,6 +1377,17 @@ button.submit {
 
 .cart-page .newsletter {
   background: #e2e2e2; }
+
+.cart-empty .return-to-shop .btn-back {
+  background-color: #c7ab7b;
+  color: #FFF;
+  font-size: 15px;
+  display: inline-block;
+  min-width: 197px;
+  height: 46px;
+  line-height: 46px;
+  padding: 0 15px;
+  font-style: italic; }
 
 .cart-body {
   font-size: 17px;
