@@ -1,0 +1,7 @@
+.post-short-content {
+	img {
+		@include device_min(large) {
+			max-width: 70%;
+		}
+	}
+}
