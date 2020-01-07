@@ -22,8 +22,10 @@
 	    opacity: .7;
 		}
 		.caption {
-			color: #fff;
 			background-color: #949c38;
+            .big, .lasted-price {
+                color: #fff;
+            }
 		}
 	}
 	&:after {
@@ -87,8 +89,10 @@
 	}
 	.caption {
     padding: 20px;
-    color: #4c4c4c;
+    
     .big {
+        color: #4c4c4c;
+        // color: #6fab06;
     	font-size: 22px;
         margin-bottom: 0;
     	@include device_max(small) {
@@ -102,9 +106,12 @@
       }
     }
     .lasted-price {
-    	font-size: 20px;
+    	font-size: 18px;
+        color: #d15176;
+        // color: #7bc100;
+        // color: #d15176;
     	@include device_max(small) {
-				font-size: 18px;
+				font-size: 16px;
 			}
       @include device_max(414) {
         font-size: 15px;

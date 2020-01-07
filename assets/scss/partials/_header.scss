@@ -87,10 +87,10 @@
 
 .search-shop-info {
 	margin-left: auto;
-	margin-right: 9%;
+	margin-right: 8%;
 	a {
 		color: #fff;
-    font-size: 22px;
+    font-size: 20px;
     @include device_max(large) {
 			font-size: 17px;
 		}
@@ -126,7 +126,7 @@
 			}
 			i{
 				color: #fff;
-				font-size: 22px;
+				font-size: 20px;
 				@include device_max(large) {
 					font-size: 17px;
 				}
@@ -201,6 +201,7 @@
 				}
 		    &:hover {
     	    color: #d0cd80;
+	        // color: #7bc100;
 		    }
 			}
 		}

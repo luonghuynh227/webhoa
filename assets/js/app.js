@@ -222,8 +222,8 @@ jQuery(document).ready(function($) {
 
     $('#filters a').click(function(e){
       e.preventDefault();
-      $('.select-filter').removeClass('select-filter');
-      $(this).parent('li').addClass('select-filter');
+      $('#filters a').removeClass('select-filter');
+      $(this).addClass('select-filter');
       var selector = $(this).attr('data-filter');
       $('#flower-wrap').isotope({ filter: selector });
       setProjects();

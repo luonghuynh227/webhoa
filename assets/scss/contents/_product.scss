@@ -20,23 +20,27 @@
 	    position: relative;
 	    display: block;
 	    font-family: 'utm_gods_word';
-	    font-size: 16px;
+	    font-size: 17px;
 	    text-align: center;
 	    padding: 0 19px;
 	    font-weight: 700;
 	    text-transform: uppercase;
 	    color: #696969;
 	    line-height: 40px;
-	    &:hover {
+	    &:hover, &.select-filter {
 	    	color: #c7ab7b;
 	    }
+	    // &:hover {
+	    // 	color: #c7ab7b;
+	    // }
+
   	}
   }
-  .select-filter {
-  	a {
-  		color: #c7ab7b;
-  	}
-  }
+  // .select-filter {
+  // 	a {
+  // 		color: #c7ab7b;
+  // 	}
+  // }
 }
 
 .flower-filter {
@@ -56,8 +60,7 @@
 		}
 		.caption {
 	    background-color: #949c38;
-	    color: #fff;
-	    h4 {
+	    h4, .sw-price {
 	    	color: #fff;
 	    }
 		}
@@ -132,10 +135,10 @@
     padding: 15px 5px;
     z-index: 9;
     transition: all .3s linear;
-    color: #4c4c4c;
     h4 {
     	color: #4c4c4c;
-    	font-size: 20px;
+    	// color: #7bc100;
+    	font-size: 22px;
 	    overflow: hidden;
 	    line-height: 36px;
 	    width: 100%;
@@ -146,6 +149,8 @@
     .sw-price {
 			font-size: 16px;
 			margin-bottom: 0;	
+			// color: #7bc100;
+			color: #d15176;
     }
 	}
 }
