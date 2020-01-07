@@ -62,6 +62,9 @@
   padding: 55px 38px;
   background-color: rgba(255,255,255,.6);
   border: 1px solid #FFF;
+  @include device_max(small) {
+		padding: 40px 20px;
+	}
 	form {
 		input, textarea {
 			font-family: 'utm_gods_word';

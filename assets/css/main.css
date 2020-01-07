@@ -422,7 +422,7 @@ input, button {
   border: 0;
   background: transparent; }
 
-input[type="number"], input[type="email"], input[type="password"], input[type="text"] {
+input[type="number"], input[type="email"], input[type="password"], input[type="text"], input[type="tel"] {
   border: 1px solid #c7ab7b;
   color: #373737;
   font-size: 17px;
@@ -601,16 +601,17 @@ button.submit {
     -webkit-transform: scale(1.5);
     transform: scale(1.5); } }
 
-.click-to-shop {
-  margin-bottom: 30px; }
-  .click-to-shop .link-to-shop {
-    width: 212px;
-    height: 212px;
-    background: url(../images/bopflorist_logo2.gif) no-repeat;
-    display: inline-block;
-    margin-top: -130px;
-    position: relative;
-    z-index: 9; }
+.click-to-shop .link-to-shop {
+  width: 212px;
+  height: 212px;
+  background: url(../images/bopflorist_logo2.gif) no-repeat;
+  display: inline-block;
+  margin-top: -130px;
+  position: relative;
+  z-index: 9; }
+
+.lasted-post .section-wrap {
+  padding-top: 50px; }
 
 .latest-post-content [class^="col-"] {
   padding-left: 0 !important;
@@ -793,6 +794,10 @@ button.submit {
       font-size: 22px;
       padding: 0 12px;
       line-height: 1.5; }
+
+@media (max-width: 767px) {
+  .about .title {
+    margin-bottom: 30px; } }
 
 @media (max-width: 767px) {
   .about .title h2 br {
@@ -1124,6 +1129,9 @@ button.submit {
   padding: 55px 38px;
   background-color: rgba(255, 255, 255, 0.6);
   border: 1px solid #FFF; }
+  @media (max-width: 767px) {
+    .contact-form-data {
+      padding: 40px 20px; } }
   .contact-form-data form input, .contact-form-data form textarea {
     font-family: 'utm_gods_word';
     color: #000;

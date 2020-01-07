@@ -1,5 +1,8 @@
 .about {
 	.title {
+		@include device_max(small) {
+			margin-bottom: 30px;
+		}
 		h2 {
 			br {
 				@include device_max(small) {
