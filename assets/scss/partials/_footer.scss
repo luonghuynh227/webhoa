@@ -1,11 +1,69 @@
 #footer {
-	// padding: 35px 0;
-	// background-color: #f1f1f1;
-	// p {
- //    color: #403f3f;
- //    line-height: 1.7em;
-	// }
+	.widget-footer {
+		margin-top: 20px;
+	}
+	.title-widget {
+    margin-top: 0;
+		margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+	}
 	.footer-top {
 		background: #f6f6f6;
+    padding-top: 60px;
+    padding-bottom: 90px;
+	}
+	.footer-bottom {
+    background: #f1f1f1;
+    padding: 20px 0;
+		p {
+	    color: #403f3f;
+	    margin-bottom: 0;
+		}
+	}
+}
+
+.footer-subscribe {
+	.footer-logo {
+		margin-bottom: 20px;
+		img {
+			width: 120px;
+		}
+	}
+	.footer-newsletter {
+		margin-top: 18px;
+		.text-newsletter {
+      width: 100%;
+	    max-width: 300px;
+	    border: none;
+	    border-bottom: 1px solid #ddd;
+	    padding: 10px 0;
+	    background-color: transparent;
+      font-size: 15px;
+		}
+		.btn-register {
+	    padding: 6px 20px;
+	    border: none;
+	    background: #c7ab7b;
+	    color: #ffffff;
+	    margin-top: 12px;
+	    font-size: 18px;
+	    font-family: 'utm_gods_word';
+	    display: block;
+		}
+	}
+}
+
+.footer-contact {
+	
+	.list-footer-contact {
+		li {
+	    margin-bottom: 10px;
+		}
+		label {
+			font-weight: 600;
+			display: block;
+		}
 	}
 }
