@@ -1727,11 +1727,9 @@ button.submit {
   .pp-flower .fv-price {
     font-size: 24px;
     font-style: italic;
-    color: #c7ab7b;
-    margin-top: 8px; }
+    color: #c7ab7b; }
   .pp-flower .suk-propup {
     float: left;
-    margin-top: 6px;
     font-size: 15px;
     color: #292626; }
     .pp-flower .suk-propup .sku-wrapper {
