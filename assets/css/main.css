@@ -49,19 +49,20 @@
   .head-page .logo-scroll {
     display: none;
     position: absolute;
-    left: 5%;
+    left: 10%;
     top: 50%;
     -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
     transform: translateY(-50%); }
+    @media (max-width: 1199px) {
+      .head-page .logo-scroll {
+        left: 5%; } }
     .head-page .logo-scroll img {
       width: 55px; }
 
 .search-shop-info {
   margin-left: auto;
-  margin-right: 6%; }
+  margin-right: 9%; }
   .search-shop-info a {
     color: #fff;
     font-size: 22px; }
@@ -111,7 +112,7 @@
       margin-top: 0; } }
   .head-menu .button-menu-mobile {
     position: absolute;
-    right: 3%;
+    right: 5%;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -450,7 +451,7 @@ button.submit {
   font-weight: normal; }
 
 .section-wrap {
-  padding-top: 50px; }
+  padding-top: 70px; }
 
 .wrap-bottom {
   margin-bottom: 30px; }
@@ -1127,7 +1128,8 @@ button.submit {
     width: 100%;
     margin-bottom: 15px;
     border: 1px solid #fff;
-    background: none; }
+    background: none;
+    font-size: 16px; }
     .contact-form-data form input::-webkit-input-placeholder, .contact-form-data form textarea::-webkit-input-placeholder {
       color: #373737; }
     .contact-form-data form input:-ms-input-placeholder, .contact-form-data form textarea:-ms-input-placeholder {
@@ -1143,7 +1145,6 @@ button.submit {
       color: #373737;
       font-style: italic; }
   .contact-form-data form input {
-    font-size: 16px;
     height: 27px;
     border: none;
     border-bottom: 1px solid #FFF;

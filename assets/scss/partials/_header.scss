@@ -72,13 +72,12 @@
 	.logo-scroll {
 		display: none;
 		position: absolute;
-    left: 5%;
+    left: 10%;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
     transform: translateY(-50%);
+    @include device_max(large) {
+			left: 5%;
+		}
 		img {
 			width: 55px;
 		}
@@ -88,7 +87,7 @@
 
 .search-shop-info {
 	margin-left: auto;
-	margin-right: 6%;
+	margin-right: 9%;
 	a {
 		color: #fff;
     font-size: 22px;
@@ -144,7 +143,7 @@
 	}
 	.button-menu-mobile {
 		position: absolute;
-    right: 3%;
+    right: 5%;
     top: 50%;
     transform: translateY(-50%);
     transition: all .3s cubic-bezier(1,.01,.29,.93);
