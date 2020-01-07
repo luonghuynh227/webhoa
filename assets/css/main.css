@@ -74,7 +74,7 @@
     width: 227px;
     color: #fff;
     font-size: 16px;
-    border-bottom: 1px solid #c7ab7b; }
+    border-bottom: 1px solid #fff; }
     @media (max-width: 1199px) {
       .search-shop-info .group-search .input-search {
         height: 25px;
@@ -277,12 +277,8 @@
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
 
-#footer {
-  padding: 35px 0;
-  background-color: #f1f1f1; }
-  #footer p {
-    color: #403f3f;
-    line-height: 1.7em; }
+#footer .footer-top {
+  background: #f6f6f6; }
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -1194,6 +1190,7 @@ button.submit {
     background-image: url(../images/banner-child/slide-1.jpg); }
 
 .flower-content {
+  margin-top: 60px;
   margin-bottom: 50px; }
 
 .filters {
