@@ -169,7 +169,8 @@
             color: #fff;
             border-bottom: 1px solid rgba(225, 225, 225, 0.1); } }
         .head-menu .head-menu-ul li a:hover {
-          color: #d0cd80; }
+          color: #d0cd80;
+          text-decoration: none; }
 
 .menu-item-has-child {
   position: relative; }
