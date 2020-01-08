@@ -1,15 +1,14 @@
 jQuery(document).ready(function($) {
     "use strict";
+    
   /*==============================
         Xử lý Go Top
   ==============================*/
-  var offset = 600,
-      gotop = $('#scrollUp');
+  var offset = 600, gotop = $('#scrollUp');
 
   $(window).scroll(function() {
     ($(this).scrollTop() < offset) ? gotop.removeClass('active') : gotop.addClass('active');
   });
-
   gotop.click(function(){$('html,body').stop().animate({scrollTop: 0}, 1000, 'easeInOutExpo');});
 
   /*==============================
@@ -18,7 +17,6 @@ jQuery(document).ready(function($) {
   $('body').on('click', '#lasted-post .item-flower', function() {
     $(this).find("a.view").click();
   });
-
 
 
   /*==============================
@@ -132,7 +130,7 @@ jQuery(document).ready(function($) {
         $('#banner-image, #banner-slider, .list-banner-slider, .item-banner-slider').height(heightFixMobile);
     }
     var heightBanner = $('#banner-image').height();
-    if($('.bg-banner-image').length!='' && heightWindow>600) heightBanner=600;
+    if($('.bg-banner-image').length!='' && heightWindow>650) heightBanner=650;
     if (heightWindow > heightBanner && $("#banner-image").length>0) {
         $('#header, #banner-image').css({
             height: heightBanner + 'px'
