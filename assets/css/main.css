@@ -1817,6 +1817,8 @@ button.submit {
 
 .page-not-found .text-not-found {
   font-size: 18px; }
+  .page-not-found .text-not-found a:hover {
+    text-decoration: underline; }
 
 .pp-flower {
   position: relative;

@@ -11,5 +11,10 @@
 	}
 	.text-not-found {
 		font-size: 18px;
+		a {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 	}
 }
