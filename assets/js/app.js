@@ -132,7 +132,7 @@ jQuery(document).ready(function($) {
         $('#banner-image, #banner-slider, .list-banner-slider, .item-banner-slider').height(heightFixMobile);
     }
     var heightBanner = $('#banner-image').height();
-    if($('.bg-banner-image').length!='' && heightWindow>730) heightBanner=730;
+    if($('.bg-banner-image').length!='' && heightWindow>600) heightBanner=600;
     if (heightWindow > heightBanner && $("#banner-image").length>0) {
         $('#header, #banner-image').css({
             height: heightBanner + 'px'

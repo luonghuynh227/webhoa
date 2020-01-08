@@ -247,7 +247,7 @@
 	    display: block;
 	    position: absolute;
 	    border: 5px solid transparent;
-	    border-bottom-color: #111;
+	    border-bottom-color: #fff;
 	    left: 50px;
 	    top: -10px;
 	    @include device_max(large) {
