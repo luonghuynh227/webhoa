@@ -1,6 +1,18 @@
 jQuery(document).ready(function($) {
     "use strict";
   /*==============================
+        Xử lý Go Top
+  ==============================*/
+  var offset = 600,
+      gotop = $('#scrollUp');
+
+  $(window).scroll(function() {
+    ($(this).scrollTop() < offset) ? gotop.removeClass('active') : gotop.addClass('active');
+  });
+
+  gotop.click(function(){$('html,body').stop().animate({scrollTop: 0}, 1000, 'easeInOutExpo');});
+
+  /*==============================
         click lated post home
   ==============================*/
   $('body').on('click', '#lasted-post .item-flower', function() {

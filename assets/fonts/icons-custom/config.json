@@ -83,6 +83,18 @@
       "css": "user-circle-o",
       "code": 62142,
       "src": "fontawesome"
+    },
+    {
+      "uid": "47a1f80457068fbeab69fdb83d7d0817",
+      "css": "youtube-play",
+      "code": 61802,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "fe6697b391355dec12f3d86d6d490397",
+      "css": "up-open",
+      "code": 59399,
+      "src": "fontawesome"
     }
   ]
 }

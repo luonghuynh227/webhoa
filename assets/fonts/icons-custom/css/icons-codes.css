@@ -6,8 +6,10 @@
 .icon-mail:before { content: '\e804'; } /* '' */
 .icon-plus-circled:before { content: '\e805'; } /* '' */
 .icon-minus-circled:before { content: '\e806'; } /* '' */
+.icon-up-open:before { content: '\e807'; } /* '' */
 .icon-menu:before { content: '\f008'; } /* '' */
 .icon-facebook:before { content: '\f09a'; } /* '' */
+.icon-youtube-play:before { content: '\f16a'; } /* '' */
 .icon-instagram:before { content: '\f16d'; } /* '' */
 .icon-yelp:before { content: '\f1e9'; } /* '' */
 .icon-shopping-bag:before { content: '\f290'; } /* '' */

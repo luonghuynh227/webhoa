@@ -67,3 +67,39 @@
 		}
 	}
 }
+
+#scrollUp {
+	cursor: pointer;
+	position: fixed;
+	width: 40px;
+  height: 40px;
+  background-color: #c7ab7b;
+  border: 3px solid #eeeeee;
+  color: #ffffff;
+  right: 30px;
+  bottom: 60px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 50px;
+  z-index: 999;
+  display: none;
+  @include device_max(small) {
+    right: 3%;
+  }
+  i {
+    font-size: 16px;
+    display: block;
+    line-height: 30px;
+  }
+  &.active {
+  	display: block;
+  }
+  &:hover {
+  	i {
+	    animation-name: fadeInUp;
+	    animation-duration: 1s;
+	    animation-fill-mode: both;
+	    animation-iteration-count: infinite;
+  	}
+  }
+}
