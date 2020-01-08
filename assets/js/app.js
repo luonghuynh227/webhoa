@@ -296,5 +296,23 @@ jQuery(document).ready(function($) {
         setProjects();
     });
 
-
+    /*==============================
+      slider list image single-product.html
+    ==============================*/
+    $('.slider-for').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.slider-for',
+      dots: false,
+      // centerPadding: '5px',
+      // centerMode: true,
+      focusOnSelect: true
+    });
 });

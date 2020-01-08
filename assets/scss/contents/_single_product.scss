@@ -1,37 +1,102 @@
+// .single-product {
+// 	.post-image {
+// 		overflow: hidden;
+// 		img {
+// 	    height: auto;
+// 	    max-width: 100%;
+// 	    width: auto;
+// 	    object-fit: contain !important;
+// 	    max-height: 500px;
+// 		}
+// 	}
+// 	.product-title {
+// 		font-size: 24px;
+//     text-transform: uppercase;
+// 	}
+// 	.price {
+// 		font-size: 20px;
+//     color: #d15176;
+// 	}
+// 	form.cart {
+// 		margin-bottom: 20px;
+// 	}
+// 	.wrap-qty {
+// 		.input-qty {
+// 	    min-width: 197px;
+//     	width: 80%;
+// 		}
+// 	}
+// 	.product-meta {
+// 		.product-sku {
+// 	    padding-right: 20px;
+// 	    font-size: 20px;
+// 	    font-weight: 600;
+// 	    color: #3a3a3a;
+// 		}
+// 	}
+// }
 .single-product {
-	.post-image {
-		overflow: hidden;
-		img {
-	    height: auto;
-	    max-width: 100%;
-	    width: auto;
-	    object-fit: contain !important;
-	    max-height: 500px;
+	.product-image {
+		.slick-arrow {
+	    position: absolute;
+	    top: 50%;
+      transform: translate(0, -50%);
+      width: 30px;
+	    height: 30px;
+	    line-height: 30px;
+	    text-align: center;
+	    background: #ddd;
+	    color: #fff;
+	    z-index: 9;
+	    // opacity: 0;
+	    cursor: pointer;
+	    transition: all 0.3s ease-in-out;
+      text-indent: -99999px;
+		}
+		.slick-prev {
+			left: 7.5px;
+		}
+		.slick-next {
+			right: 7.5px;
 		}
 	}
-	.product-title {
-		font-size: 24px;
-    text-transform: uppercase;
-	}
-	.price {
-		font-size: 20px;
-    color: #d15176;
-	}
-	form.cart {
-		margin-bottom: 20px;
-	}
-	.wrap-qty {
-		.input-qty {
-	    min-width: 197px;
-    	width: 80%;
+}
+.product-list-image {
+	.list-image-big {
+    border: 1px solid #ddd;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    width: calc(100% - 15px);
+		.item-image-big {
+			img {
+				width: 100%;
+		    object-fit: contain;
+		    height: 500px;
+		    @include device_max(480) {
+			    height: 400px;
+			  }
+			  @include device_max(360) {
+			    height: 300px;
+			  }
+			}
 		}
 	}
-	.product-meta {
-		.product-sku {
-	    padding-right: 20px;
-	    font-size: 20px;
-	    font-weight: 600;
-	    color: #3a3a3a;
+	.list-image-small {
+		.item-image-small {
+			border: 1px solid #ddd;
+			margin: 0 7.5px;
+			img {
+				width: 100%;
+		    object-fit: contain;
+		    height: 120px;
+		    @include device_max(480) {
+			    height: 100px;
+			  }
+			  @include device_max(360) {
+			    height: 80px;
+			  }
+			}
 		}
 	}
 }
