@@ -682,6 +682,16 @@ button.submit {
     -webkit-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     transform: rotate(360deg); }
+  .item-flower:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 99; }
   .item-flower .image-wrap {
     position: relative;
     height: 285px;
