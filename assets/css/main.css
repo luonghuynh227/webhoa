@@ -534,6 +534,9 @@ button.submit {
 
 .section-wrap {
   padding-top: 70px; }
+  @media (max-width: 767px) {
+    .section-wrap {
+      padding-top: 0; } }
 
 .wrap-bottom {
   margin-bottom: 30px; }

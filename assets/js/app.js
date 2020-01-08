@@ -128,17 +128,29 @@ jQuery(document).ready(function($) {
         var heightFixMobile = heightWindow - 140;
         $('#banner-image, #banner-slider, .list-banner-slider, .item-banner-slider').height(heightFixMobile);
     }
-    var heightBanner = $('#banner-image').height();
-    if($('.bg-banner-image').length!='' && heightWindow>650) heightBanner=650;
-    if (heightWindow > heightBanner && $("#banner-image").length>0) {
-        $('#header, #banner-image').css({
-            height: heightBanner + 'px'
-        });
+    // var heightBanner = $('#banner-image').height();
+    // if($('.bg-banner-image').length!='' && heightWindow>650) heightBanner=650;
+    // if (heightWindow > heightBanner && $("#banner-image").length>0) {
+    //     $('#header, #banner-image').css({
+    //         height: heightBanner + 'px'
+    //     });
 
-    } else if (heightWindow <= heightBanner && $("#banner-image").length>0) {
-        $('#header, #banner-image').css({
-            height: heightWindow + 'px'
-        });
+    // } else if (heightWindow <= heightBanner && $("#banner-image").length>0) {
+    //     $('#header, #banner-image').css({
+    //         height: heightWindow + 'px'
+    //     });
+    // }
+
+    // set background cho trang con #banner-image
+    if (widthWindow >= 768 && $("#banner-image").length>0) {
+      $('#header, #banner-image').css({
+        height: '650px'
+      });
+    } else if (widthWindow < 768 && $("#banner-image").length>0) {
+      var height2 = heightWindow / 3;
+      $('#header, #banner-image').css({
+        height: '350px'
+      });
     }
   };
   setHeightBanner();

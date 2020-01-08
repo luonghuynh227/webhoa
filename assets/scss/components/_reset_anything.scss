@@ -183,6 +183,9 @@ button.submit {
 
 .section-wrap {
   padding-top: 70px;
+  @include device_max(small) {
+    padding-top: 0;
+  }
 }
 .wrap-bottom {
   margin-bottom: 30px;
