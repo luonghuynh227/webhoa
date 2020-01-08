@@ -10,6 +10,10 @@
 .icon-down-open:before { content: '\e808'; } /* '' */
 .icon-left-open:before { content: '\e809'; } /* '' */
 .icon-right-open:before { content: '\e80a'; } /* '' */
+.icon-plus:before { content: '\e80b'; } /* '' */
+.icon-minus:before { content: '\e80c'; } /* '' */
+.icon-phone:before { content: '\e80d'; } /* '' */
+.icon-phone-1:before { content: '\e80e'; } /* '' */
 .icon-menu:before { content: '\f008'; } /* '' */
 .icon-facebook:before { content: '\f09a'; } /* '' */
 .icon-youtube-play:before { content: '\f16a'; } /* '' */
