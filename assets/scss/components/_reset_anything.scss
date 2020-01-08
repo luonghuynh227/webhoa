@@ -209,7 +209,11 @@ button.submit {
   }
 }
 
-
+a {
+  &:hover {
+    text-decoration: underline;
+  }
+}
 
 // Keyframes 
 @keyframes fadeInUp {

@@ -554,6 +554,9 @@ button.submit {
     .btn-more a:hover {
       text-decoration: underline; }
 
+a:hover {
+  text-decoration: underline; }
+
 @-webkit-keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -1278,6 +1281,29 @@ button.submit {
       background-color: #333;
       border: none; }
 
+.pagination ul {
+  text-align: center; }
+  .pagination ul li {
+    display: inline-block;
+    margin: 0 3px; }
+    .pagination ul li:hover a, .pagination ul li.active a {
+      text-decoration: none;
+      color: #ffffff;
+      background: #5f4c2e;
+      border: 1px solid #5f4c2e; }
+    .pagination ul li a {
+      display: block;
+      width: 40px;
+      height: 40px;
+      border: 1px solid #5f4c2e;
+      line-height: 40px;
+      color: #5f4c2e;
+      font-size: 14px;
+      border-radius: 5px;
+      -webkit-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease; }
+
 .banner-image {
   position: relative;
   overflow: hidden; }
@@ -1320,7 +1346,8 @@ button.submit {
       color: #696969;
       line-height: 40px; }
       .filters li a:hover, .filters li a.select-filter {
-        color: #c7ab7b; }
+        color: #c7ab7b;
+        text-decoration: none; }
 
 .flower-item {
   cursor: pointer;
@@ -1449,6 +1476,10 @@ button.submit {
   font-weight: 600;
   color: #3a3a3a; }
 
+.blog-list .row {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
 .post-single {
   position: relative;
   margin-bottom: 80px; }
@@ -1456,14 +1487,14 @@ button.submit {
     .post-single h3 {
       line-height: 35px; } }
   .post-single .post-title {
-    font-size: 40px;
+    font-size: 32px;
     margin-bottom: 43px;
     color: #4e4e4d;
     font-weight: 600;
     line-height: 40px; }
     @media (max-width: 767px) {
       .post-single .post-title {
-        font-size: 35px; } }
+        font-size: 30px; } }
   .post-single .post-image {
     position: relative; }
     .post-single .post-image img {
