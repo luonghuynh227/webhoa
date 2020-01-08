@@ -184,11 +184,11 @@ button.submit {
 .section-wrap {
   padding-top: 70px;
   @include device_max(small) {
-    padding-top: 0;
+    padding-top: 30px;
   }
 }
 .wrap-bottom {
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 }
 
 .btn-more {
@@ -209,6 +209,19 @@ button.submit {
     &:hover {
       text-decoration: underline;
     }
+  }
+}
+.btn-buy {
+  padding: 8px 20px;
+  border: none;
+  background: #c7ab7b;
+  color: #ffffff;
+  margin-top: 12px;
+  font-size: 18px;
+  height: auto;
+  &:hover {
+    background: #373737;
+    color: #ffffff;
   }
 }
 
