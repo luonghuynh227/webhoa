@@ -48,16 +48,29 @@
 	    background: #ddd;
 	    color: #fff;
 	    z-index: 9;
-	    // opacity: 0;
+	    opacity: 0;
 	    cursor: pointer;
 	    transition: all 0.3s ease-in-out;
-      text-indent: -99999px;
+      font-size: 0;
+      font-family: "icons";
+      &:hover {
+  	    background: #cfb08b;
+      }
+      &:before {
+      	font-size: 16px;
+      }
 		}
 		.slick-prev {
 			left: 7.5px;
+			&:before {
+				content: '\e809';
+			}
 		}
 		.slick-next {
 			right: 7.5px;
+			&:before {
+				content: '\e80a';
+			}
 		}
 	}
 }
@@ -83,6 +96,11 @@
 		}
 	}
 	.list-image-small {
+		&:hover {
+			.slick-arrow {
+				opacity: 1;
+			}
+		}
 		.item-image-small {
 			border: 1px solid #ddd;
 			margin: 0 7.5px;
