@@ -1,20 +1,40 @@
 .page-not-found {
-	h3 {
-		font-size: 30px;
-		margin-bottom: 0;
-		margin-top: 0;
-	}
+	
 	h1 {
-		line-height: 1.3;
-		font-size: 120px;
+    line-height: 1;
+    font-size: 150px;
+    margin-top: 0;
+    color: #c7ab7b;
+	}
+	h3 {
+		font-size: 28px;
 		margin-top: 0;
+		line-height: 1.5;
+		@include device_max(small) {
+			font-size: 21px;
+		}
 	}
 	.text-not-found {
-		font-size: 18px;
+		font-size: 16px;
+		@include device_max(small) {
+			font-size: 14px;
+		}
 		a {
 			&:hover {
 				text-decoration: underline;
 			}
 		}
+	}
+	.btn-back-home {
+		background: #c7ab7b;
+    border-radius: 35px;
+    box-shadow: none;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 30px;
 	}
 }
