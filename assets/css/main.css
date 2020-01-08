@@ -682,17 +682,6 @@ button.submit {
     -webkit-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     transform: rotate(360deg); }
-  .item-flower:after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-bottom: 1px solid #c7ab7b;
-    top: 0;
-    left: 0;
-    opacity: 1;
-    z-index: 99; }
   .item-flower .image-wrap {
     position: relative;
     height: 285px;
@@ -1269,8 +1258,7 @@ button.submit {
         color: #c7ab7b; }
 
 .flower-item {
-  cursor: pointer;
-  border-bottom: #c7ab7c 1px solid; }
+  cursor: pointer; }
   @media (max-width: 479px) {
     .flower-item {
       width: 49% !important; } }

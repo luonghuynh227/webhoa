@@ -50,7 +50,7 @@
 
 .flower-item {
 	cursor: pointer;
-	border-bottom: #c7ab7c 1px solid;
+	// border-bottom: #c7ab7c 1px solid;
 	@include device_max(480) {
 		width: 49% !important;
 	}
