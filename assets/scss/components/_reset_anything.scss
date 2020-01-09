@@ -243,11 +243,11 @@ button.submit {
     transform: translate(-50%, -50%);
   }
   &.button-minus {
-    top: 0;
-    border-bottom: 1px solid #c7ab7b;
+    bottom: 0;
+    border-top: 1px solid #c7ab7b;
   }
   &.button-plus {
-    bottom: 0;
+    top: 0;
   }
 }
 

@@ -591,10 +591,10 @@ button.submit {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
   .button-updown.button-minus {
-    top: 0;
-    border-bottom: 1px solid #c7ab7b; }
+    bottom: 0;
+    border-top: 1px solid #c7ab7b; }
   .button-updown.button-plus {
-    bottom: 0; }
+    top: 0; }
 
 a:hover {
   text-decoration: underline; }
