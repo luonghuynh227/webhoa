@@ -587,7 +587,7 @@ button.submit {
   border-left: 1px solid #c7ab7b; }
   .button-updown .icons {
     font-size: 12px;
-    color: #373737;
+    color: #4c4c4c;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -1986,7 +1986,7 @@ a {
     height: 100%;
     opacity: .7; }
   .search-item:hover .caption-search {
-    background-color: #949c38; }
+    background-color: #80825a; }
   .search-item img {
     height: 235px;
     -o-object-fit: contain;
