@@ -1419,7 +1419,7 @@ a:hover {
 
 .widget-socials ul li {
   display: inline-block;
-  margin-right: 10px; }
+  margin-right: 5px; }
   .widget-socials ul li .icons {
     border-radius: 50%;
     background-color: #ddd;
@@ -1660,6 +1660,10 @@ a:hover {
   .product-detail-info .product-quantity-action .form-product-quantity input {
     width: 60px;
     height: 40px; }
+
+.product-detail-info .widget-socials {
+  margin-top: 25px;
+  margin-bottom: 0; }
 
 .blog-list .row {
   -ms-flex-wrap: wrap;

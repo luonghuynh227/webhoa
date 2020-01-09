@@ -15,7 +15,10 @@
 .icon-phone:before { content: '\e80d'; } /* '' */
 .icon-phone-1:before { content: '\e80e'; } /* '' */
 .icon-menu:before { content: '\f008'; } /* '' */
+.icon-twitter:before { content: '\f099'; } /* '' */
 .icon-facebook:before { content: '\f09a'; } /* '' */
+.icon-gplus:before { content: '\f0d5'; } /* '' */
+.icon-linkedin:before { content: '\f0e1'; } /* '' */
 .icon-youtube-play:before { content: '\f16a'; } /* '' */
 .icon-instagram:before { content: '\f16d'; } /* '' */
 .icon-yelp:before { content: '\f1e9'; } /* '' */
