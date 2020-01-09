@@ -511,6 +511,9 @@ input[type="number"], input[type="email"], input[type="password"], input[type="t
   padding: 0 12px;
   height: 46px; }
 
+input[type="number"].input-qty-updown {
+  padding: 0 22px 0 0; }
+
 input[type="submit"]:hover, button.submit:hover {
   background-color: #333;
   -webkit-transition: all 0.3s linear 0s;
@@ -569,6 +572,27 @@ button.submit {
   .btn-buy:hover {
     background: #373737;
     color: #ffffff; }
+
+.button-updown {
+  height: 50%;
+  width: 22px;
+  position: absolute;
+  right: 0;
+  border-left: 1px solid #c7ab7b; }
+  .button-updown .icons {
+    font-size: 12px;
+    color: #373737;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+  .button-updown.button-minus {
+    top: 0;
+    border-bottom: 1px solid #c7ab7b; }
+  .button-updown.button-plus {
+    bottom: 0; }
 
 a:hover {
   text-decoration: underline; }
@@ -1769,11 +1793,14 @@ a:hover {
       .cart-item .cart-qty {
         width: 100%;
         text-align: center; } }
+    .cart-item .cart-qty .qty-wrap {
+      width: 30%;
+      margin-left: auto;
+      margin-right: auto; }
     .cart-item .cart-qty input {
       text-align: center;
-      width: 30%;
+      width: 100%;
       border: 1px solid #c7ab7b;
-      padding: 0 12px;
       font-size: 15px;
       height: 36px; }
       @media (max-width: 767px) {

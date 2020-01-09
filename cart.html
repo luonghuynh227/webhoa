@@ -141,7 +141,6 @@
 					</p>
 				</div>
 				<div class="list-cart">
-					<form action="">
 						<table class="shopping-cart-table table">
 							<thead>
 								<tr>
@@ -169,8 +168,14 @@
 										<span>250.000</span> đ
 									</td>
 									<td class="cart-qty text-center">
-										<div class="qty-wrap">
-											<input type="number" step="1" min="0" name="" value="1" class="input-qty f-open-sans">
+										<div class="qty-wrap p-relative">
+											<button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="button-updown button-minus">
+												<i class="icons icon-minus"></i>
+											</button>
+											<input type="number" step="1" min="1" name="" value="1" class="input-qty input-qty-updown text-center f-open-sans">
+											<button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="button-updown button-plus">
+												<i class="icons icon-plus"></i>
+											</button>
 										</div>
 									</td>
 									<td class="cart-total text-right f-open-sans">
@@ -195,8 +200,14 @@
 										<span>1.250.000</span> đ
 									</td>
 									<td class="cart-qty text-center">
-										<div class="qty-wrap">
-											<input type="number" step="1" min="0" name="" value="1" class="input-qty f-open-sans">
+										<div class="qty-wrap p-relative">
+											<button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="button-updown button-minus">
+												<i class="icons icon-minus"></i>
+											</button>
+											<input type="number" step="1" min="1" name="" value="1" class="input-qty input-qty-updown text-center f-open-sans">
+											<button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="button-updown button-plus">
+												<i class="icons icon-plus"></i>
+											</button>
 										</div>
 									</td>
 									<td class="cart-total text-right f-open-sans">
@@ -221,8 +232,14 @@
 										<span>920.000</span> đ
 									</td>
 									<td class="cart-qty text-center">
-										<div class="qty-wrap">
-											<input type="number" step="1" min="0" name="" value="1" class="input-qty f-open-sans">
+										<div class="qty-wrap p-relative">
+											<button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="button-updown button-minus">
+												<i class="icons icon-minus"></i>
+											</button>
+											<input type="number" step="1" min="1" name="" value="1" class="input-qty input-qty-updown text-center f-open-sans">
+											<button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="button-updown button-plus">
+												<i class="icons icon-plus"></i>
+											</button>
 										</div>
 									</td>
 									<td class="cart-total text-right f-open-sans">
@@ -245,7 +262,6 @@
 
 							</tbody>
 						</table>
-					</form>
 
 					<div class="price-total f-open-sans">
 						<div class="cart-total-all">

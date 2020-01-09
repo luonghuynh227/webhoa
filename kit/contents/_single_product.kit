@@ -56,10 +56,14 @@
 						<p class="price-detail"><span>1.260.000</span> đ</p>
 						<div class="product-quantity-action d-flex">
 							<div class="txt-quantity">Số lượng:</div>
-							<div class="form-product-quantity">
-								<form action="">
-									<input type="number" value="1">
-								</form>
+							<div class="form-product-quantity p-relative">
+								<button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="button-updown button-minus">
+									<i class="icons icon-minus"></i>
+								</button>
+								<input type="number" value="1" min="1" class="input-qty-updown text-center">
+								<button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="button-updown button-plus">
+									<i class="icons icon-plus"></i>
+								</button>
 							</div>
 						</div>
 						<a href="/?add-to-cart=14542" data-product_id="14542" data-product_sku="1496" data-quantity="1" class="btn btn-buy f-utm-gods-word">Mua ngay</a>
