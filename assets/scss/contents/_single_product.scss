@@ -84,6 +84,7 @@
 }
 
 .product-detail-info {
+	// color: #373737;
 	.product-name {
 
 	}
@@ -92,8 +93,10 @@
 	}
 	.price-detail {
 		font-weight: 600;
-		color: #ff5151;
 		font-size: 20px;
+		span {
+			color: #ff5151;
+		}
 	}
 	.product-quantity-action {
     align-items: center;
