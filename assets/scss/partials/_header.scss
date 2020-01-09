@@ -11,7 +11,9 @@
   left: 0;
   right: 0;
   z-index: 999;
-  background-color: #5f4c2e;
+  // background-color: #5f4c2e;
+  background-color: #80825a;
+  // background-color: #94ad8d;
   @include device_max(large) {
 		opacity: .8 !important;
 		top: 0;

@@ -33,13 +33,14 @@
 	    min-height: 540px;
 		}
 		h5 {
-			font-size: 21px;
-			line-height: 30px;
-			padding-right: 40px;
+	    font-size: 28px;
+	    line-height: 30px;
+	    padding-right: 20px;
+	    margin-top: 0;
 		}
 		.about-text-des {
 	    text-align: justify;
-			font-size: 14px;
+			font-size: 15px;
 	    color: #4c4c4c;
 		}
 		.text-wrap, .about-to-contact {
@@ -65,7 +66,7 @@
   background: -moz-linear-gradient(to top, #E3D1A2 0%, #fdeed1 100%);
   background: -o-linear-gradient(to top, #E3D1A2 0%, #fdeed1 100%);
   background: -ms-linear-gradient(to top, #E3D1A2 0%, #fdeed1 100%);
-  background: -webkit-linear-gradient(bottom, #E3D1A2 0%, #fdeed1 100%);
+  background: -webkit-linear-gradient(bottom, #80825a 0%, #9fa07e 100%);
   @include device_max(small) {
 		display: block;
     width: 100%;
@@ -108,7 +109,7 @@
 		    vertical-align: middle;
 		    font-size: 20px;
 		    line-height: 1.2em;
-		    color: #b29563;
+		    color: #fff;
 		    padding: 20px;
 	    }
     }
@@ -117,7 +118,7 @@
     width: 220px;
     height: 220px !important;
     font-size: 16px;
-    color: #c7ab7b;
+    color: #fff;
     position: absolute;
     margin: auto;
     left: 0;
