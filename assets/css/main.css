@@ -327,6 +327,8 @@
 
 .footer-contact .list-footer-contact li {
   margin-bottom: 10px; }
+  .footer-contact .list-footer-contact li a {
+    font-weight: 700; }
 
 .footer-contact .list-footer-contact label {
   font-weight: 600;
@@ -1353,6 +1355,10 @@ a:hover {
   margin-bottom: 22px;
   color: #4e4e4d; }
 
+@media (max-width: 991px) {
+  .widget-search {
+    margin-top: 50px; } }
+
 .widget-search input {
   font-size: 16px;
   padding: 10px 20px; }
@@ -1393,7 +1399,8 @@ a:hover {
     height: 70px; }
 
 .widget-post .widget-post-des {
-  padding-left: 81px; }
+  padding-left: 81px;
+  padding-top: 3%; }
   .widget-post .widget-post-des .widget-des-title {
     display: block;
     font-weight: 400;
@@ -1715,10 +1722,6 @@ a:hover {
     padding: 7px 19px;
     color: #fff;
     font-size: 16px; }
-
-@media (min-width: 1200px) {
-  .post-short-content img {
-    max-width: 70%; } }
 
 .cart-page .newsletter {
   background: #e2e2e2; }

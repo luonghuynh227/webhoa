@@ -9,6 +9,10 @@
 	color: #4e4e4d;
 }
 .widget-search {
+	@include device_max(medium) {
+    margin-top: 50px;
+  }
+	    
 	input {
 		font-size: 16px;
 		padding: 10px 20px;
@@ -59,6 +63,7 @@
 	}
 	.widget-post-des {
     padding-left: 81px;
+    padding-top: 3%;
 		.widget-des-title {
 			display: block;
 	    font-weight: 400;
