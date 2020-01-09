@@ -13,9 +13,9 @@ jQuery(document).ready(function($) {
   /*==============================
         click lated post home
   ==============================*/
-  $('body').on('click', '#lasted-post .item-flower', function() {
-    $(this).find("a.view").click();
-  });
+  // $('body').on('click', '#lasted-post .item-flower', function() {
+  //   $(this).find("a.view").click();
+  // });
 
 
   /*==============================
@@ -213,20 +213,20 @@ jQuery(document).ready(function($) {
       Click lated post product home
     ==============================*/
 
-  $('.popup-with-zoom-anim').magnificPopup({
-    type:'inline',
-    overflowY: 'auto',
-    removalDelay: 600,
-    closeBtnInside: true,
-    preloader: false,
-    mainClass: 'my-mfp-custom',
-    midClick: true,
-    callbacks: {
-      beforeOpen: function() {
-         this.st.mainClass = this.st.el.attr('data-effect');
-      }
-    },
-  });
+  // $('.popup-with-zoom-anim').magnificPopup({
+  //   type:'inline',
+  //   overflowY: 'auto',
+  //   removalDelay: 600,
+  //   closeBtnInside: true,
+  //   preloader: false,
+  //   mainClass: 'my-mfp-custom',
+  //   midClick: true,
+  //   callbacks: {
+  //     beforeOpen: function() {
+  //        this.st.mainClass = this.st.el.attr('data-effect');
+  //     }
+  //   },
+  // });
 
   /*==============================
       flower-filter with isotope js

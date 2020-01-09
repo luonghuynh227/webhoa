@@ -756,6 +756,9 @@ a:hover {
   position: relative;
   z-index: 9; }
 
+.lasted-post a:hover {
+  text-decoration: none; }
+
 .lasted-post .section-wrap {
   padding-top: 50px; }
 

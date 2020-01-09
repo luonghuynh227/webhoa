@@ -1,4 +1,9 @@
 .lasted-post {
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
 	.section-wrap {
         padding-top: 50px;
     }
