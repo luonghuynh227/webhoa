@@ -656,7 +656,7 @@ a {
       border-radius: 0 !important;
       margin: 0 1px !important; }
       .banner-slider .owl-nav button:hover {
-        background-color: #5f4c2e !important;
+        background-color: #80825a !important;
         background-image: url(../images/nav-slide-3.png) !important; }
       .banner-slider .owl-nav button.owl-next {
         background-position: right center !important; }
@@ -1704,10 +1704,11 @@ a {
     width: 90px;
     top: 0;
     left: 0;
-    border-right: 5px solid #c7ab7b;
+    border-bottom: 5px solid #80825a;
     text-align: center;
     font-size: 16px;
-    color: #c7ab7b; }
+    color: #80825a;
+    background: rgba(255, 255, 255, 0.6); }
     .post-single .post-date .post-day {
       font-family: 'Open Sans', sans-serif;
       font-size: 60px;
@@ -1723,7 +1724,9 @@ a {
   .post-single .post-info {
     color: #c7ab7c; }
     .post-single .post-info span {
-      color: #4c4b4b; }
+      color: #4c4b4b;
+      font-size: 15px;
+      font-weight: 600; }
   .post-single .post-short-content {
     margin-top: 20px;
     font-size: 16px;
@@ -1959,7 +1962,8 @@ a {
     text-transform: uppercase; }
   .billing-fields .form-group input {
     border: 0;
-    border-bottom: 1px solid #e5e5e5; }
+    border-bottom: 1px solid #e5e5e5;
+    padding-left: 0; }
 
 .shop-cart-checkout {
   color: #4c4c4c;

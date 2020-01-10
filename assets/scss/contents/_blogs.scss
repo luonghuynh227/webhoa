@@ -37,10 +37,11 @@
     width: 90px;
     top: 0;
     left: 0;
-    border-right: 5px solid #c7ab7b;
+    border-bottom: 5px solid #80825a;
     text-align: center;
     font-size: 16px;
-    color: #c7ab7b;
+    color: #80825a;
+    background: rgba(255, 255, 255, 0.6);
     .post-day {
     	font-family: 'Open Sans', sans-serif;
 	    font-size: 60px;
@@ -60,6 +61,8 @@
 		color: #c7ab7c;
 		span {
 			color: #4c4b4b;
+	    font-size: 15px;
+	    font-weight: 600;
 		}
 	}
 	.post-short-content {
