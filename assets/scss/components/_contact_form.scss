@@ -60,39 +60,40 @@
 
 .contact-form-data {
   padding: 55px 38px;
-  background-color: rgba(255,255,255,.6);
-  border: 1px solid #FFF;
+  // background-color: rgba(255,255,255,.6);
+  background-color: rgba(128, 130, 90, 0.4);
+  // border: 1px solid #FFF;
   @include device_max(small) {
 		padding: 40px 20px;
 	}
 	form {
 		input, textarea {
-			font-family: 'utm_gods_word';
-			color: #000;
+			// font-family: 'utm_gods_word';
+			color: #fff;
 			width: 100%;
 			margin-bottom: 15px;
 	    border: 1px solid #fff;
 	    background: none;
 	    font-size: 16px;
 	    &::placeholder {
-			  color: #373737;
+			  color: #fff;
 			}
 
 			&::-ms-input-placeholder { 
-			  color: #373737;
+			  color: #fff;
 			  font-style: italic;
 			}
 
 			&::-ms-input-placeholder {
-			  color: #373737;
+			  color: #fff;
 			  font-style: italic;
 			}
 		}
 		input {
-			
+			padding-left: 0;
 			height: 27px;
 			border: none;
-			border-bottom: 1px solid #FFF;
+			border-bottom: 1px solid #ddd;
 	    margin-bottom: 50px;
 		}
 		textarea {
@@ -102,8 +103,9 @@
       padding: 10px;
 		}
 		button {
-			font-family: 'utm_gods_word';
-			font-size: 18px;
+			// font-family: 'utm_gods_word';
+			font-size: 20px;
+			font-weight: 600;
 			margin-top: 20px;
 	    height: 58px;
 	    width: 215px;

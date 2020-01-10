@@ -325,7 +325,7 @@
     color: #ffffff;
     margin-top: 12px;
     font-size: 18px;
-    font-family: 'utm_gods_word';
+    font-weight: 600;
     display: block; }
 
 .footer-contact .list-footer-contact li {
@@ -1287,37 +1287,36 @@ a {
 
 .contact-form-data {
   padding: 55px 38px;
-  background-color: rgba(255, 255, 255, 0.6);
-  border: 1px solid #FFF; }
+  background-color: rgba(128, 130, 90, 0.4); }
   @media (max-width: 767px) {
     .contact-form-data {
       padding: 40px 20px; } }
   .contact-form-data form input, .contact-form-data form textarea {
-    font-family: 'utm_gods_word';
-    color: #000;
+    color: #fff;
     width: 100%;
     margin-bottom: 15px;
     border: 1px solid #fff;
     background: none;
     font-size: 16px; }
     .contact-form-data form input::-webkit-input-placeholder, .contact-form-data form textarea::-webkit-input-placeholder {
-      color: #373737; }
+      color: #fff; }
     .contact-form-data form input:-ms-input-placeholder, .contact-form-data form textarea:-ms-input-placeholder {
-      color: #373737; }
+      color: #fff; }
     .contact-form-data form input::-ms-input-placeholder, .contact-form-data form textarea::-ms-input-placeholder {
-      color: #373737; }
+      color: #fff; }
     .contact-form-data form input::placeholder, .contact-form-data form textarea::placeholder {
-      color: #373737; }
+      color: #fff; }
     .contact-form-data form input::-ms-input-placeholder, .contact-form-data form textarea::-ms-input-placeholder {
-      color: #373737;
+      color: #fff;
       font-style: italic; }
     .contact-form-data form input::-ms-input-placeholder, .contact-form-data form textarea::-ms-input-placeholder {
-      color: #373737;
+      color: #fff;
       font-style: italic; }
   .contact-form-data form input {
+    padding-left: 0;
     height: 27px;
     border: none;
-    border-bottom: 1px solid #FFF;
+    border-bottom: 1px solid #ddd;
     margin-bottom: 50px; }
   .contact-form-data form textarea {
     margin-top: 20px;
@@ -1325,8 +1324,8 @@ a {
     height: 127px;
     padding: 10px; }
   .contact-form-data form button {
-    font-family: 'utm_gods_word';
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 600;
     margin-top: 20px;
     height: 58px;
     width: 215px; }
