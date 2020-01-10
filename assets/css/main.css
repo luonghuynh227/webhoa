@@ -325,7 +325,6 @@
     color: #ffffff;
     margin-top: 12px;
     font-size: 18px;
-    font-weight: 600;
     display: block; }
 
 .footer-contact .list-footer-contact li {
@@ -432,6 +431,9 @@ input[type=number] {
 
 .f-right {
   float: right; }
+
+.fw-600 {
+  font-weight: 600; }
 
 .line-title {
   width: 87px;
@@ -1325,7 +1327,6 @@ a {
     padding: 10px; }
   .contact-form-data form button {
     font-size: 20px;
-    font-weight: 600;
     margin-top: 20px;
     height: 58px;
     width: 215px; }
