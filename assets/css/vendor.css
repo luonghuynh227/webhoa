@@ -2370,6 +2370,7 @@ fieldset[disabled] a.btn {
   margin-bottom: 0; }
 
 .modal-title {
+  margin-top: 15px;
   font-size: 30px; }
   @media (max-width: 767px) {
     .modal-title {
