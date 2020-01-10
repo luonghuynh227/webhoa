@@ -2278,9 +2278,13 @@ fieldset[disabled] a.btn {
   .modal .close {
     border: 0;
     display: block;
-    width: 100%;
     padding: 0;
-    background-color: transparent; }
+    background-color: transparent;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: auto; }
   .modal .close-icon {
     position: absolute;
     content: "";
@@ -2292,10 +2296,6 @@ fieldset[disabled] a.btn {
     top: 15px;
     right: 15px;
     background-color: transparent; }
-    @media (min-width: 768px) {
-      .modal .close-icon {
-        top: 25px;
-        right: 25px; } }
     .modal .close-icon:before, .modal .close-icon:after {
       position: absolute;
       content: "";
@@ -2327,15 +2327,6 @@ fieldset[disabled] a.btn {
   background-color: #fff;
   background-clip: padding-box;
   outline: 0; }
-  @media (min-width: 992px) {
-    .modal-content {
-      display: table; } }
-
-@media (min-width: 992px) {
-  .modal-header,
-  .modal-body {
-    display: table-cell;
-    vertical-align: middle; } }
 
 .modal-backdrop {
   position: fixed;
@@ -2367,22 +2358,19 @@ fieldset[disabled] a.btn {
     background-color: #e1e1e1;
     height: 200px; }
   @media (min-width: 992px) {
-    .modal-header {
-      width: 41.237113402%; }
-      .modal-header .cover-image {
-        height: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0; } }
+    .modal-header .cover-image {
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; } }
 
 .modal-description {
   margin-bottom: 0; }
 
 .modal-title {
-  margin-top: 47px;
-  margin-bottom: 3px; }
+  font-size: 30px; }
   @media (max-width: 767px) {
     .modal-title {
       font-size: 26px; }
@@ -2390,12 +2378,9 @@ fieldset[disabled] a.btn {
         display: none !important; } }
 
 .modal-body {
+  font-size: 18px;
   position: relative;
-  padding: 15px 15px 85px; }
-  @media (min-width: 992px) {
-    .modal-body {
-      width: 58.762886598%;
-      padding: 30px 60px 125px; } }
+  padding-bottom: 50px; }
 
 @media (min-width: 768px) {
   .modal-sm {
@@ -2403,7 +2388,7 @@ fieldset[disabled] a.btn {
 
 @media (min-width: 992px) {
   .modal-dialog {
-    width: 970px;
+    width: 400px;
     margin: 0 auto; } }
 
 .modal.popup-1 form {
@@ -2431,7 +2416,6 @@ fieldset[disabled] a.btn {
 .modal.popup-2 .modal-header,
 .modal.popup-2 .modal-body {
   display: inline-block;
-  width: 50%;
   font-size: 16px;
   vertical-align: top; }
   @media (max-width: 991px) {
