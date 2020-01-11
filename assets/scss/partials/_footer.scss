@@ -76,6 +76,16 @@
 	}
 }
 
+.footer-fanpage {
+	.box-main-fanpage {
+		.fb_iframe_widget {
+			span {
+				// width: 370px !important;
+			}
+		}
+	}
+}
+
 #scrollUp {
 	cursor: pointer;
 	position: fixed;
